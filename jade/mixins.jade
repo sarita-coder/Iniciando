@@ -1,0 +1,17 @@
+mixin img-100-jpg(image)
+	img.w-100(src="img/"+image+".jpg")
+
+mixin img-100-png(image)
+	img.w-100(src="img/"+image+".png")
+
+mixin portafolio(image,texto)
+	.col-sm-4
+		.portafolio
+			.pantalla
+				+img-100-png(image)
+				.btn-star
+			a(href="")
+				.informacion.w-100
+					h1=(texto)
+			
+

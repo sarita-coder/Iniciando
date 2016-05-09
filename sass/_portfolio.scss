@@ -1,0 +1,50 @@
+body{
+	padding:0;
+	margin:0;
+}
+.carrusel{
+	
+	margin-top: 50px;
+	img{
+		height: 100vh;
+	}
+
+}
+.img-icon{
+	img{
+		height: 500px;
+
+	}
+}
+.col-sm-4{
+	.portafolio{
+		position: relative;
+		height: 200px;
+		.pantalla{
+			position: absolute;
+			border: 13px solid black;
+			border-radius: 5px;
+			.btn-star{
+				position: absolute;
+				bottom:-12px;
+				right: -10px;
+				border-radius: 50%;
+				height: 10px;
+				width: 12px;
+				border: 1px solid yellow;
+
+			}
+		}
+		a {
+			.informacion{
+				visibility: hidden;
+				position: absolute;
+				height: 200px;
+			}
+		}
+		a:hover ~ .informacion{
+			visibility: visible;
+			background: red;
+		}
+	}
+}
