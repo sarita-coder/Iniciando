@@ -1,7 +1,17 @@
-body{
-	padding:0;
-	margin:0;
+.navbar-fixed-top{
+	background:$bg-color;
 }
+.navbar-brand{
+	padding:5px;
+	.logo{
+		height: 40px;
+	}
+
+}
+.hvr-bounce-to-right,.navbar-brand {
+	color: #FF358B;
+	font-weight:bold;
+}	
 .carrusel{
 	
 	margin-top: 50px;
@@ -13,7 +23,6 @@ body{
 .img-icon{
 	img{
 		height: 500px;
-
 	}
 }
 .col-sm-4{

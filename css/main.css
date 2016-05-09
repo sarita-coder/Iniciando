@@ -1,51 +1,11 @@
 @charset "UTF-8";
-.w-100 {
-  width: 100%; }
-
-.pt-100 {
-  padding-top: 100px; }
-
-body {
-  padding: 0;
-  margin: 0; }
-
-.carrusel {
-  margin-top: 50px; }
-  .carrusel img {
-    height: 100vh; }
-
-.img-icon img {
-  height: 500px; }
-
-.col-sm-4 .portafolio {
-  position: relative;
-  height: 200px; }
-  .col-sm-4 .portafolio .pantalla {
-    position: absolute;
-    border: 13px solid black;
-    border-radius: 5px; }
-    .col-sm-4 .portafolio .pantalla .btn-star {
-      position: absolute;
-      bottom: -12px;
-      right: -10px;
-      border-radius: 50%;
-      height: 10px;
-      width: 12px;
-      border: 1px solid yellow; }
-  .col-sm-4 .portafolio a .informacion {
-    visibility: hidden;
-    position: absolute;
-    height: 200px; }
-  .col-sm-4 .portafolio a:hover ~ .informacion {
-    visibility: visible;
-    background: red; }
-
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5850,5 +5810,59 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poiret One';
+  font-size: 20px; }
+
+.w-100 {
+  width: 100%; }
+
+.pt-100 {
+  padding-top: 100px; }
+
+.navbar-fixed-top {
+  background: #ffffff; }
+
+.navbar-brand {
+  padding: 5px; }
+  .navbar-brand .logo {
+    height: 40px; }
+
+.hvr-bounce-to-right, .navbar-brand {
+  color: #FF358B;
+  font-weight: bold; }
+
+.carrusel {
+  margin-top: 50px; }
+  .carrusel img {
+    height: 100vh; }
+
+.img-icon img {
+  height: 500px; }
+
+.col-sm-4 .portafolio {
+  position: relative;
+  height: 200px; }
+  .col-sm-4 .portafolio .pantalla {
+    position: absolute;
+    border: 13px solid black;
+    border-radius: 5px; }
+    .col-sm-4 .portafolio .pantalla .btn-star {
+      position: absolute;
+      bottom: -12px;
+      right: -10px;
+      border-radius: 50%;
+      height: 10px;
+      width: 12px;
+      border: 1px solid yellow; }
+  .col-sm-4 .portafolio a .informacion {
+    visibility: hidden;
+    position: absolute;
+    height: 200px; }
+  .col-sm-4 .portafolio a:hover ~ .informacion {
+    visibility: visible;
+    background: red; }
 
 /*# sourceMappingURL=main.css.map */
