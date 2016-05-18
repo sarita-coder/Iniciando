@@ -5830,6 +5830,9 @@ button.close {
   .navbar-brand .logo {
     height: 40px; }
 
+#contendor img {
+  width: 50%; }
+
 .hvr-bounce-to-right, .navbar-brand {
   color: #FF358B;
   font-weight: bold; }
@@ -5840,6 +5843,9 @@ button.close {
     height: 100vh; }
 
 .img-icon img {
+  height: 500px; }
+
+.hero1 {
   height: 500px; }
 
 .col-sm-4 .portafolio {

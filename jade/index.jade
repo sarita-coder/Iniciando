@@ -27,17 +27,44 @@ body
 						a.hvr-bounce-to-right(href='#contact') Habilidades
 					li
 						a.hvr-bounce-to-right(href='#contact') Contacto
-	//fin header
+	//fin header	
 	.Hero
 		.container-fluid
 			.row
-				.carrusel
-					+img-100-jpg("hero1")
-	
+				#carousel.carousel.slide(data-ride="carousel")
+					ol.carousel-indicators
+						li.active(data-target="#carousel-example-generic" data-slide-to="1")
+						li.active(data-target="#carousel-example-generic" data-slide-to="2")
+					.carousel-inner
+						.item.active
+							+img-100-jpg("hero1")
+							.carousel-caption
+						.item
+							+img-100-jpg("hero2")
+							.carousel-caption
+						.item
+							+img-100-jpg("hero3")
+							.carousel-caption
+						a.left.carousel-control(href="#carousel" data-slide="prev")
+							span.glyphicon.glyhicon-chevron-left
+						a.right.carousel-control(href="#carousel" data-slide="prev")
+							span.glyphicon.glyhicon-chevron-right
+
+
 	.main
 		.conatiner
 			#sobre_mi.pt-100
 				.row
+					.col-sm-6
+						.yo
+							#contendor
+								+img-100-jpg("sobre_mi")
+				
+						
+					.col-sm-6
+						.textSobreMi
+							#maquina
+								
 					
 	.main
 		.container.text-center
@@ -67,4 +94,5 @@ script(src='http://code.jquery.com/jquery-1.11.2.min.js')
 script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
 script(type='text/javascript', src='js/bootstrap.min.js')
 script(src='js/scroll.js')
+script(src='js/main.js')
 	
