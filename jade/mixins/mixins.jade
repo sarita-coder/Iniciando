@@ -14,4 +14,12 @@ mixin portafolio(image,texto)
 				.informacion.w-100
 					h1=(texto)
 			
+mixin title(texto)
+	.title
+		h1=(texto)
 
+mixin colSobreMi(image)
+	.col-sm-4
+		.portafolio
+			.pantalla
+				+img-100-png(image)

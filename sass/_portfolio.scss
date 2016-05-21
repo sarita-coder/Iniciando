@@ -1,26 +1,113 @@
 .navbar-fixed-top{
 	background:$bg-color;
 }
+.header{
+	background:$bg-celeste;
+	color:$text-white;
+}
+.icon-bar{
+	background:$bg-celeste;
+}
 .navbar-brand{
 	padding:5px;
 	.logo{
-		height: 40px;
-	}
+		height: 50px;
+		width: 50px;
+		display: inline-block;
+    	background-size: 70%;
+    	margin-top: -5px;
+    	
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	border-radius: 0  100% 0  100% / 60%;
+    		}
 }
 #contendor{
 	img{
 		width: 50%;
-		
 	}
 }
-.hvr-bounce-to-right,.navbar-brand {
-	color: #FF358B;
-	font-weight:bold;
-}	
-.carrusel{
-	
+#collapse ul li .inver1{
+	color:$bg-celeste;
+}
+#collapse ul li .inver{
+	color:$text-white;
+}
+.logo-inver1{
+	background-image: url(../img/SARITA-IN.png);
+	box-shadow: 10px 15px 10px #3A6F77;
+	background-color: $text-white;
+
+}
+.logo-inver{
+	background-image: url(../img/SARITA-02.png);
+	background-color: #fff;
+	box-shadow: 10px 15px 10px  $bg-celeste;
+}
+.navbar-nav{
+	transform: translateX(0%);
+	transition: all 0.8s ease-in-out;
+}
+.navbar-toggle{
+	margin-top: 18px;
+	margin-bottom: -16px;
+}
+.navbar-toggle:hover {
+	cursor: pointer; 
+}
+.navbar-toggle.open .icon-bar {
+	background: #fff; 
+}
+.navbar-collapse {
+	border-top: 0px;
+}
+.navbar-toggle.open .icon-bar:first-child {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 10px;
+    -moz-transform-origin: 10px;
+    -ms-transform-origin: 10px;
+    -o-transform-origin: 10px;
+    transform-origin: 0px; 
+}
+.navbar-toggle.open .icon-bar:nth-child(2) {
+    opacity: 0; 
+}
+.navbar-toggle.open .icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 8px;
+    -moz-transform-origin: 8px;
+    -ms-transform-origin: 8px;
+    -o-transform-origin: 8px;
+    transform-origin: 2.5px;
+}
+.bar{
+	background:$bg-white;
+}
+.bar-inv{
+	background:$bg-celeste;
+}
+.icon-bar {
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	display: block;
+	width: 26px;
+	height: 2px;
+	margin: 0 0 5px;
+}
+/// primer
+#carrusel{
 	margin-top: 50px;
-	img{
+	.item{
 		height: 100vh;
 	}
 
@@ -49,7 +136,6 @@
 				height: 10px;
 				width: 12px;
 				border: 1px solid yellow;
-
 			}
 		}
 		a {
@@ -64,4 +150,22 @@
 			background: red;
 		}
 	}
+}
+////titulos
+.title{
+	color:$bg-celeste;
+}
+////
+.col-2{
+	height:100vh;
+	display:inline-block;
+	width:45%;
+	border-left: 55px solid transparent
+}
+.row .col-2:nth-child(2){
+	
+	background:$bg-celeste;
+	 border-: 13px solid #fff;
+	 -ms-transform-origin:100% 100%; 
+	 -o-transform-origin:100% 100%
 }

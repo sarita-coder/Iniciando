@@ -5,9 +5,10 @@ head
 	meta(charset="UTF-8")
 	title Sarita Coder
 	link(rel="stylesheet", href="css/main.css")
+	link(rel="stylesheet", href="./font-awesome/css/font-awesome.min.css")
 body
 	// Fixed navbar
-	.navbar.navbar-fixed-top(role='navigation')
+	#menu.navbar.navbar-fixed-top(role='navigation')
 		.container.padd
 			.navbar-header
 				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -15,18 +16,17 @@ body
 					span.icon-bar
 					span.icon-bar
 				a.navbar-brand(href='#')
-					img.logo(src="img/push.png")
-
+					span.logo
 			#collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
 					li.active
-						a.hvr-bounce-to-right(href='#') Sobre mí
+						a.link-header(href='#Sobremi') Sobre mí
 					li
-						a.hvr-bounce-to-right(href='#portafolio') Portafolio
+						a.link-header(href='#portafolio') Portafolio
 					li
-						a.hvr-bounce-to-right(href='#contact') Habilidades
+						a.link-header(href='#contact') Habilidades
 					li
-						a.hvr-bounce-to-right(href='#contact') Contacto
+						a.link-header(href='#contact') Contacto
 	//fin header	
 	.Hero
 		.container-fluid
@@ -49,32 +49,29 @@ body
 							span.glyphicon.glyhicon-chevron-left
 						a.right.carousel-control(href="#carousel" data-slide="prev")
 							span.glyphicon.glyhicon-chevron-right
-
-
 	.main
-		.conatiner
-			#sobre_mi.pt-100
+		.container-fluid.text-center
+			#Sobremi.pt-100
 				.row
-					.col-sm-6
-						.yo
-							#contendor
-								+img-100-jpg("sobre_mi")
-				
-						
-					.col-sm-6
-						.textSobreMi
-							#maquina
-								
-					
+					+title("Sobre mi")
+				.row
+					.col-2
+						.hoverSM
+							+img-100-png("sobremi")
+					.col-2
+						.description
+							p Coder apasionada por el código 
+
+							
 	.main
 		.container.text-center
 			#portafolio.pt-100
 				.row
-					.title
-						.h1 PORTAFOLIO 
-						.img-icon
-							+img-100-png("habilidades_3")
+					+title("Portafolio")
 				.row
+					.img-icon
+				.row
+					+img-100-png("habilidades_3")
 					+portafolio("portfolio_1","BLOG LOVE")
 					+portafolio("portfolio_1","BLOG LOVE")
 					+portafolio("portfolio_1","BLOG LOVE")
