@@ -5951,6 +5951,61 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 30px; }
 
+.global {
+  background: linear-gradient(#eee 50%, #333 50%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#toggle {
+  display: none; }
+
+#botton {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  line-height: 200px;
+  text-align: center;
+  font-size: 70px;
+  border-radius: 50%;
+  color: #777;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  margin: auto; }
+
+#toggle:checked + #botton {
+  background: #eee;
+  box-shadow: inset 0 12px 35px rgba(0, 0, 0, 0.5);
+  color: rgba(0, 255, 0, 0.7); }
+
+.contenedor {
+  width: 100%; }
+
+.luces {
+  display: flex;
+  margin-top: 50px;
+  border-top: 1x solid #fff;
+  justify-content: center; }
+  .luces img {
+    display: block;
+    margin: auto; }
+
+#luz {
+  opacity: 0; }
+
+#toggle:checked ~ .luces #luz {
+  opacity: 1;
+  transition: all 0.5s; }
+
+#luz {
+  opacity: 0;
+  transition: all 0.5s; }
+
+#toggle:checked ~ .luces #luz {
+  opacity: 1; }
+
 .col-2 {
   display: inline-block;
   width: 45%;
