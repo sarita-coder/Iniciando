@@ -24,9 +24,9 @@ body
 					li
 						a.link-header(href='#portafolio') Portafolio
 					li
-						a.link-header(href='#contact') Habilidades
+						a.link-header(href='#habilidades') Habilidades
 					li
-						a.link-header(href='#contact') Contacto
+						a.link-header(href='#contacto') Contacto
 	//fin header	
 	.Hero
 		.container-fluid
@@ -37,53 +37,100 @@ body
 						li.active(data-target="#carousel-example-generic" data-slide-to="2")
 					.carousel-inner
 						.item.active
-							+img-100-jpg("hero1")
-							.carousel-caption
-						.item
 							+img-100-jpg("hero2")
 							.carousel-caption
 						.item
 							+img-100-jpg("hero3")
 							.carousel-caption
-						a.left.carousel-control(href="#carousel" data-slide="prev")
-							span.glyphicon.glyhicon-chevron-left
-						a.right.carousel-control(href="#carousel" data-slide="prev")
-							span.glyphicon.glyhicon-chevron-right
-	.main
-		.container-fluid.text-center
-			#Sobremi.pt-100
-				.row
-					+title("Sobre mi")
-				.row
-					.col-2
-						.hoverSM
-							+img-100-png("sobremi")
-					.col-2
-						.description
-							p Coder apasionada por el código 
+						.item
+							+img-100-jpg("hero7")
+							.carousel-caption
+						.item
+							+img-100-jpg("hero5")
+							.carousel-caption
+						.item
+							+img-100-jpg("hero6")
+							.carousel-caption
 
-							
-	.main
+	#Sobremi
 		.container.text-center
-			#portafolio.pt-100
-				.row
-					+title("Portafolio")
-				.row
-					.img-icon
-				.row
+			.row
+				.col-sm-3
+					.col-etiqueta.text-center
+						.contedor
+							.etiqueta.etiq
+						.poligono
+						p 
+							a.actitudes(href="") Fuerza
+						hr.ln1
+						p 
+							a.actitudes(href="") Perseverante
+						hr.ln1
+						p 
+							a.actitudes(href="") Naturaleza
+						
+						.contenedor.etiqueta.etiq2
+				.col-sm-9.pd-50
+					.row
+						.col-foto
+							p SARITA ROMAN  
+							hr.ln1
+							p 
+								a.carrera(href="") ECONOMISTA
+								a.carrera(href="") FRONTED
+								a.carrera(href="") GEOMÁTICA
+					.row.description
+						.col-sm-6
+							p Front-end, apasionada por el código, con muchas ganas para afrontar cada reto que se me presente por que siento que es una nueva oportunidad de demostrar que todo es posible, busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubri que toda idea o sueño se puede materializar, como tambien amar a Google, se ha convertido en mi compañero de día y con el descubri que podemos programar un mundo diferente. Fueron 5 meses que permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en grupo. Otra cosa que me enamora es la naturaleza sobre todo las cataratas orgulloza de mi país.
+						.col-sm-6
+							img.foto.w-100(src="img/sobremi.png")
+							h2 "Programando con pasión y espíritu verde"
+														
+	.main#portafolio
+		.container.text-center
+			.row.portafolio
+				+title("Portafolio")
+				+portafolio("portfolio_1","BLOG LOVE")
+				.col-sm-8
 					+img-100-png("habilidades_3")
-					+portafolio("portfolio_1","BLOG LOVE")
-					+portafolio("portfolio_1","BLOG LOVE")
-					+portafolio("portfolio_1","BLOG LOVE")
-				.row
-					+portafolio("portfolio_1","BLOG LOVE")
-					+portafolio("portfolio_1","BLOG LOVE")
-					+portafolio("portfolio_1","BLOG LOVE")
+			.row.portafolio
+				+portafolio("portfolio_1","BLOG LOVE")
+				+portafolio("portfolio_1","BLOG LOVE")
+				+portafolio("portfolio_1","BLOG LOVE")
 
+	.main#habilidades
+		.container.text-center
+			.row
+				+title("Habilidades")
+			.row.field1
+				+habilidades("Html 80%")
+				+habilidades("Css3 75%")
+				+habilidades("Js 30%")
+				+habilidades("Bootstrap 50%")
+			.row.field2
+				+habilidades("Jade 70%")
+				+habilidades("Sass 70%")
+				+habilidades("Wordpress 0%")
+				+habilidades("Base de Datos 40%")
 
+	.main#contacto
+		.container.text-center.contacto
+			.row
+				+title("Contactame")
+				.fa.fa-spinner.fa-spin.fa-3x.fa-fw
+					span.sr-only
+			.row
+				.redes
+					a(href="").fa.fa-github
+					a(href="").fa.fa-envelope-o
+					a(href="").fa.fa-whatsapp
+					a(href="").fa.fa-linkedin-square
+					a(href="").fa.fa-pinterest-square
 
-
-
+	footer
+		.container.text-center
+			.row
+				p Copyright &#169; 2016 | Sarita Déside Román Colonio 
 
 
 script(src='js/jquery.js')

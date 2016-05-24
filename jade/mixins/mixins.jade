@@ -10,6 +10,8 @@ mixin portafolio(image,texto)
 			.pantalla
 				+img-100-png(image)
 				.btn-star
+				.parante
+				.base
 			a(href="")
 				.informacion.w-100
 					h1=(texto)
@@ -23,3 +25,13 @@ mixin colSobreMi(image)
 		.portafolio
 			.pantalla
 				+img-100-png(image)
+
+mixin habilidades(texto)
+	.col-sm-3
+		.cont-habi.text-center
+			.cuello
+			.tubo
+			.cont
+		p=texto
+
+
