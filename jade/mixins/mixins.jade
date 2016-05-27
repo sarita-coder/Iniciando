@@ -4,17 +4,42 @@ mixin img-100-jpg(image)
 mixin img-100-png(image)
 	img.w-100(src="img/"+image+".png")
 
-mixin portafolio(image,texto)
+mixin portafolio(image,h,texto,texto1,texto2,texto3,texto4,texto5)
 	.col-sm-4
 		.portafolio
 			.pantalla
-				+img-100-png(image)
+				.carta
+					.lado.frente
+						+img-100-png(image)
+					.lado.atras
+						h4=(texto)
+						if  h==2
+							p.texto=(texto1)
+							p.texto=(texto2)
+						if h==3
+							p.texto=(texto1)
+							p.texto=(texto2)
+							p.texto=(texto3)
+						if h==4
+							p.texto=(texto1)
+							p.texto=(texto2)
+							p.texto=(texto3)
+							p.texto=(texto4)
+						if h==5
+							p.texto=(texto1)
+							p.texto=(texto2)
+							p.texto=(texto3)
+							p.texto=(texto4)
+							p.texto=(texto5)
+						else
+							p=(texto6)
+						a(href="") Ver la Página
 				.btn-star
 				.parante
 				.base
-			a(href="")
-				.informacion.w-100
-					h1=(texto)
+			
+				
+					
 			
 mixin title(texto)
 	.title
@@ -26,12 +51,12 @@ mixin colSobreMi(image)
 			.pantalla
 				+img-100-png(image)
 
-mixin habilidades(texto)
+mixin habilidades(texto,name)
 	.col-sm-3
 		.cont-habi.text-center
 			.cuello
-			.tubo
-			.cont
+			.tubo(class=name)
+			
 		p=texto
 
 

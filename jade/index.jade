@@ -8,7 +8,7 @@ head
 	link(rel="stylesheet", href="./font-awesome/css/font-awesome.min.css")
 body
 	// Fixed navbar
-	#menu.navbar.navbar-fixed-top(role='navigation')
+	#menu.navbar.navbar-fixed-top.nav-transp(role='navigation')
 		.container.padd
 			.navbar-header
 				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -29,50 +29,10 @@ body
 						a.link-header(href='#contacto') Contacto
 	//fin header	
 	.Hero
-		.container-fluid
-			.row
-				#carousel.carousel.slide(data-ride="carousel")
-					ol.carousel-indicators
-						li.active(data-target="#carousel-example-generic" data-slide-to="1")
-						li.active(data-target="#carousel-example-generic" data-slide-to="2")
-					.carousel-inner
-						.item.active
-							+img-100-jpg("hero2")
-							.carousel-caption
-						.item
-							+img-100-jpg("hero3")
-							.carousel-caption
-						.item
-							+img-100-jpg("hero7")
-							.carousel-caption
-						.item
-							+img-100-jpg("hero5")
-							.carousel-caption
-						.item
-							+img-100-jpg("hero6")
-							.carousel-caption
-
-	.main
-		.container
-			.row
-				.global
-					.contendor
-						input#toggle(type="checkbox")
-						label.fa.fa-power-off#botton(for="toggle")
+		.opacity
+			.container-fluid
 				
-						.luces
-							.caja
-								img#foco(src="img/foco.png") 
-								img#luz(src="img/luz.png")
-							.caja
-								img#foco(src="img/foco.png") 
-								img#luz(src="img/luz.png")
-							.caja
-								img#foco(src="img/foco.png") 
-								img#luz(src="img/luz.png")
-							.caja
-								img#foco(src="img/foco.png") 
-								img#luz(src="img/luz.png")
+
 
 						
 	#Sobremi
@@ -113,28 +73,29 @@ body
 		.container.text-center
 			.row.portafolio
 				+title("Portafolio")
-				+portafolio("portfolio_1","BLOG LOVE")
-				.col-sm-8
-					+img-100-png("habilidades_3")
+				+portafolio("portfolio_1",2,"BLOG LOVE","HTML","CSS")
+				+portafolio("portfolio_1",3,"BLOG LOVE","HTML","CSS","SASS")
+				+portafolio("portfolio_1",4,"BLOG LOVE","HTML","CSS","SASS","JADE")
 			.row.portafolio
-				+portafolio("portfolio_1","BLOG LOVE")
-				+portafolio("portfolio_1","BLOG LOVE")
-				+portafolio("portfolio_1","BLOG LOVE")
-
+				+portafolio("portfolio_1",4,"BLOG LOVE","HTML","CSS","SASS","JADE")
+				+portafolio("portfolio_1",3,"BLOG LOVE","HTML","CSS","JS")
+				+portafolio("portfolio_1",5,"BLOG LOVE","HTML","CSS","SASS","JADE","JS - Jqry")
 	.main#habilidades
 		.container.text-center
 			.row
 				+title("Habilidades")
 			.row.field1
-				+habilidades("Html 80%")
-				+habilidades("Css3 75%")
-				+habilidades("Js 30%")
-				+habilidades("Bootstrap 50%")
+				.pulsate
+				.pulsate
+				+habilidades("Html 80%",'id1')
+				+habilidades("Css3 75%",'id2')
+				+habilidades("Js 30%",'id3')
+				+habilidades("Bootstrap 50%",'id4')
 			.row.field2
-				+habilidades("Jade 70%")
-				+habilidades("Sass 70%")
-				+habilidades("Wordpress 0%")
-				+habilidades("Base de Datos 40%")
+				+habilidades("Jade 70%",'id5')
+				+habilidades("Sass 70%",'id6')
+				+habilidades("Wordpress 0%",'id7')
+				+habilidades("Base de Datos 40%",'id8')
 
 	.main#contacto
 		.container.text-center.contacto

@@ -5862,16 +5862,16 @@ a:hover {
 #contendor img {
   width: 50%; }
 
-#collapse ul li .inver1 {
-  color: #33ccff; }
-
-#collapse ul li .inver {
-  color: #fff; }
-
 .logo-inver1 {
   background-image: url(../img/SARITA-IN.png);
   box-shadow: 10px 15px 10px #3A6F77;
   background-color: #fff; }
+
+.nav li .link-header {
+  color: white; }
+.nav li a:hover {
+  color: #33ccff;
+  background: white; }
 
 .logo-inver {
   background-image: url(../img/SARITA-02.png);
@@ -5938,22 +5938,28 @@ a:hover {
   height: 2px;
   margin: 0 0 5px; }
 
-.carousel-inner {
-  padding-top: 50px;
+.Hero {
+  background-image: url("../img/hero6.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.opacity {
+  background: rgba(0, 0, 0, 0.52);
   height: 100vh; }
-  .carousel-inner .item img {
-    width: 100%; }
+
+.nav-transp {
+  background: transparent; }
 
 .title {
   color: #33ccff;
   font-family: "Sigmar One";
   font-size: 3rem;
-  padding-top: 30px;
   padding-bottom: 30px; }
 
 .global {
+  margin-top: 150px;
   background: linear-gradient(#eee 50%, #333 50%);
-  min-height: 100vh;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -5991,20 +5997,6 @@ a:hover {
   .luces img {
     display: block;
     margin: auto; }
-
-#luz {
-  opacity: 0; }
-
-#toggle:checked ~ .luces #luz {
-  opacity: 1;
-  transition: all 0.5s; }
-
-#luz {
-  opacity: 0;
-  transition: all 0.5s; }
-
-#toggle:checked ~ .luces #luz {
-  opacity: 1; }
 
 .col-2 {
   display: inline-block;
@@ -6062,7 +6054,7 @@ a:hover {
   font-size: 30px;
   font-family: "Sigmar One";
   color: #33ccff;
-  margin-top: 50px; }
+  margin-top: 30px; }
 .col-foto hr:nth-child(2) {
   background: #33ccff;
   height: 3px;
@@ -6089,12 +6081,6 @@ a:hover {
   font-weight: bold;
   color: #337ab7; }
 
-.container .portafolio .col-sm-8 img {
-  height: 250px; }
-
-.img-icon img {
-  height: 500px; }
-
 .hero1 {
   height: 500px; }
 
@@ -6106,7 +6092,51 @@ a:hover {
     box-shadow: -5px -5px 5px 0px #d1d1d1;
     position: absolute;
     border: 13px solid black;
-    border-radius: 8px; }
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    -webkit-perspective: 700; }
+    .col-sm-4 .portafolio .pantalla .carta {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: 2s;
+      box-shadow: 0px 0px 5px black; }
+      .col-sm-4 .portafolio .pantalla .carta .lado {
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+      .col-sm-4 .portafolio .pantalla .carta .frente {
+        background: crimson;
+        background-visibility: hidden; }
+        .col-sm-4 .portafolio .pantalla .carta .frente img {
+          width: 100%;
+          height: 100%; }
+      .col-sm-4 .portafolio .pantalla .carta .atras {
+        background: white;
+        transform: rotateY(180deg); }
+        .col-sm-4 .portafolio .pantalla .carta .atras h4 {
+          text-decoration: underline;
+          font-weight: bold;
+          margin-bottom: 0;
+          color: blue; }
+        .col-sm-4 .portafolio .pantalla .carta .atras .texto {
+          font-size: 15px;
+          margin: 0; }
+        .col-sm-4 .portafolio .pantalla .carta .atras .texto:hover {
+          background: #33ccff;
+          color: white; }
+        .col-sm-4 .portafolio .pantalla .carta .atras a {
+          color: #33ccff; }
+        .col-sm-4 .portafolio .pantalla .carta .atras a:hover {
+          background: #33ccff;
+          color: white;
+          display: inline-block;
+          width: 100%;
+          font-size: 18px; }
+    .col-sm-4 .portafolio .pantalla .carta:hover {
+      transform: rotateY(180deg); }
     .col-sm-4 .portafolio .pantalla .btn-star {
       position: absolute;
       bottom: -10px;
@@ -6144,6 +6174,9 @@ a:hover {
     visibility: visible;
     background: red; }
 
+.field1, .field2 {
+  margin-bottom: 20px; }
+
 .cont-habi {
   height: 170px;
   width: 100%;
@@ -6167,54 +6200,150 @@ a:hover {
     border: 2px solid #2C3E50;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }
-  .cont-habi .cont {
+  .cont-habi .id1:before {
+    animation: id1 15s infinite;
+    content: "";
     width: 40px;
-    height: 104px;
+    height: 0;
     position: absolute;
     right: 50%;
     margin-right: -20px;
-    top: 35px;
+    bottom: 0;
     border: 2px solid #2C3E50;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background: red; }
-
-.field1 .col-sm-3:first-child .cont-habi .cont {
-  height: 104px;
-  background: red;
-  top: 35px; }
-.field1 .col-sm-3:nth-child(2) .cont-habi .cont {
-  height: 104px;
-  background: green;
-  top: 35px; }
-.field1 .col-sm-3:nth-child(3) .cont-habi .cont {
-  height: 104px;
-  background: #3498DB;
-  top: 35px; }
-.field1 .col-sm-3:last-child .cont-habi .cont {
-  height: 104px;
-  background: #CDBFE3;
-  top: 35px; }
-
-.field2 {
-  margin-bottom: 50px; }
-  .field2 .col-sm-3:first-child .cont-habi .cont {
-    height: 104px;
-    background: #F300D3;
-    top: 35px; }
-  .field2 .col-sm-3:nth-child(2) .cont-habi .cont {
-    height: 104px;
-    background: yellow;
-    top: 35px; }
-  .field2 .col-sm-3:nth-child(3) .cont-habi .cont {
-    height: 104px;
-    background: blue;
-    top: 35px; }
-  .field2 .col-sm-3:last-child .cont-habi .cont {
-    height: 104px;
-    background: orange;
-    top: 35px; }
-
+@keyframes id1 {
+  50% {
+    height: 50px; }
+  100% {
+    height: 100px; } }
+  .cont-habi .id2:before {
+    animation: id2 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: green; }
+@keyframes id2 {
+  50% {
+    height: 40px; }
+  100% {
+    height: 90px; } }
+  .cont-habi .id3:before {
+    animation: id3 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: yellow; }
+@keyframes id3 {
+  50% {
+    height: 20px; }
+  100% {
+    height: 40px; } }
+  .cont-habi .id4:before {
+    animation: id4 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: violet; }
+@keyframes id4 {
+  50% {
+    height: 30px; }
+  100% {
+    height: 60px; } }
+  .cont-habi .id5:before {
+    animation: id5 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: pink; }
+@keyframes id5 {
+  50% {
+    height: 45px; }
+  100% {
+    height: 90px; } }
+  .cont-habi .id6:before {
+    animation: id6 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgba(241, 18, 129, 0.73); }
+@keyframes id6 {
+  50% {
+    height: 45px; }
+  100% {
+    height: 90px; } }
+  .cont-habi .id7:before {
+    animation: id7 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: skyblue; }
+@keyframes id7 {
+  50% {
+    height: 10px; }
+  100% {
+    height: 20px; } }
+  .cont-habi .id8:before {
+    animation: id8 15s infinite;
+    content: "";
+    width: 40px;
+    height: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -20px;
+    bottom: 0;
+    border: 2px solid #2C3E50;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: blue; }
+@keyframes id8 {
+  0% {
+    height: 0px; }
+  100% {
+    height: 60px; } }
 #contacto {
   padding-top: 50px;
   height: 540px;

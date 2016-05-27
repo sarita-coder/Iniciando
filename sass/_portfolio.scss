@@ -27,17 +27,23 @@
 		width: 50%;
 	}
 }
-#collapse ul li .inver1{
-	color:$bg-celeste;
-}
-#collapse ul li .inver{
-	color:$text-white;
-}
 .logo-inver1{
 	background-image: url(../img/SARITA-IN.png);
 	box-shadow: 10px 15px 10px #3A6F77;
 	background-color: $text-white;
 
+}
+
+.nav {
+	li{
+		.link-header{
+		color: white;
+		}
+	 	a:hover{
+	 	color: $bg-celeste;
+		background: white;
+	 	}
+	 }
 }
 .logo-inver{
 	background-image: url(../img/SARITA-02.png);
@@ -105,29 +111,32 @@
 	margin: 0 0 5px;
 }
 /// primer
-.carousel-inner{
-	padding-top: 50px;
+.Hero{
+	background-image: url('../img/hero6.jpg');
+	background-attachment: fixed;
+	
+	background-size: cover;
+}
+.opacity{
+	background: rgba(0, 0, 0, 0.52);
 	height: 100vh;
-	.item{
-		img{
-			width: 100%;
-
-		}
-	}
+}
+.nav-transp {
+	background: transparent;
 }
 ////titulos
 .title{
 	color:$bg-celeste;
 	font-family: $Sigmar;
 	font-size: 3rem;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 ////
 /// hero-encender
 .global{
+	margin-top: 150px;
 	background:linear-gradient(#eee 50%,#333 50%);
-	min-height:100vh;
+	min-height:300px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -167,21 +176,7 @@
 		margin: auto;
 	}
 }
-#luz{
-	opacity:0;
-}
-#toggle:checked ~ .luces #luz{
-opacity:1;
-transition: all 0.5s;
-}
 
-#luz{
-	opacity:0;
-	transition:all 0.5s;
-}
-#toggle:checked ~ .luces #luz{
-	opacity:1;
-}
 .col-2{
 	display:inline-block;
 	width:45%;
@@ -244,7 +239,7 @@ transition: all 0.5s;
 		font-size: 30px;
 		font-family: $Sigmar;
 		color: $bg-celeste;
-		margin-top:50px;
+		margin-top:30px;
 	}
 	hr:nth-child(2){
 		background:$bg-celeste;
@@ -285,23 +280,7 @@ transition: all 0.5s;
 		}	
 	}
 }
-//Portafolio
-.container{
-	.portafolio{
-		.col-sm-8{
-			img{
-				height: 250px;
-			}
-		}
-
-	}
-}
 //portafolio
-.img-icon{
-	img{
-		height: 500px;
-	}
-}
 .hero1{
 	height:500px;
 }
@@ -315,6 +294,63 @@ transition: all 0.5s;
 			position: absolute;
 			border: 13px solid black;
 			border-radius: 8px;
+			height: 200px;
+			width: 100%;
+			-webkit-perspective:700;
+			.carta{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				transform-style:preserve-3d;
+				transition:2s;
+				box-shadow: 0px 0px 5px black;
+				.lado{
+					width: 100%;
+					height: 100%;
+					position: absolute;
+
+				}
+				.frente{
+					background: crimson;
+					background-visibility:hidden;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.atras{
+					background: white;
+					transform:rotateY(180deg);
+					h4{
+						text-decoration: underline;
+						font-weight: bold;
+						margin-bottom: 0;
+						color: blue;
+					}
+					.texto{
+						font-size: 15px;
+						margin: 0;
+					}
+					.texto:hover{
+						background: $bg-celeste;
+						color: white;
+					}
+					a{
+						color: $bg-celeste;
+					}
+					a:hover{
+						background: $bg-celeste;
+						color: white;
+						display: inline-block;
+						width: 100%;
+						font-size: 18px;
+					}
+				}
+			}
+			.carta:hover{
+					transform:rotateY(180deg);
+				}
+
 			.btn-star{
 				position: absolute;
 				bottom:-10px;
@@ -361,13 +397,9 @@ transition: all 0.5s;
 		}
 	}
 }
-// Habilidades
-// .col-sm-3
-// 	.cont-habi
-// 		.cuello
-// 		.tubo
-// 		.cont
-// 		p=texto
+.field1, .field2{
+	margin-bottom: 20px;
+}
 .cont-habi{
 	height: 170px;
 	width: 100%;
@@ -383,109 +415,106 @@ transition: all 0.5s;
 		border: 2px solid $ensayo;
 	}
 	.tubo{
-		width: 40px;
-		height: 130px;
-		position: absolute;
-		right: 50%;
-		margin-right: -20px;
-		top: 9px;
-		border: 2px solid $ensayo;
-		border-bottom-left-radius:15px ;
-		border-bottom-right-radius:15px ;
+		@include conten();
 	}
-	.cont{
-		width: 40px;
-		height: 104px;
-		position: absolute;
-		right: 50%;
-		margin-right:-20px;
-		top: 35px;
-		border: 2px solid $ensayo;
-		border-bottom-left-radius:15px ;
-		border-bottom-right-radius:15px ;
-		background: red;
+	.id1:before{
+		animation: id1 15s infinite;
+		@include before(red);
 	}
-
+	@keyframes id1{
+		50%{
+			height: 50px;
+		}
+		100%{
+			height: 100px;
+		}
+	}
+	.id2:before{
+		animation: id2 15s infinite;
+		@include before(green);
+	}
+	@keyframes id2{
+		50%{
+			height: 40px;
+		}
+		100%{
+			height: 90px;
+		}
+	}
+	.id3:before{
+		animation: id3 15s infinite;
+		@include before(yellow);
+	}
+	@keyframes id3{
+		50%{
+			height: 20px;
+		}
+		100%{
+			height: 40px;
+		}
+	}
+	.id4:before{
+		animation: id4 15s infinite;
+		@include before(violet);
+	}
+	@keyframes id4{
+		50%{
+			height: 30px;
+		}
+		100%{
+			height: 60px;
+		}
+	}
+	.id5:before{
+		animation: id5 15s infinite;
+		@include before(pink);
+	}
+	@keyframes id5{
+		50%{
+			height: 45px;
+		}
+		100%{
+			height: 90px;
+		}
+	}	
+	.id6:before{
+		animation: id6 15s infinite;
+		@include before(rgba(241, 18, 129, 0.73));
+	}
+	@keyframes id6{
+		50%{
+			height: 45px;
+		}
+		100%{
+			height: 90px;
+		}
+	}
+	.id7:before{
+		animation: id7 15s infinite;
+		@include before(skyblue);
+	}
+	@keyframes id7{
+		50%{
+			height: 10px;
+		}
+		100%{
+			height: 20px;
+		}
+	}
+	.id8:before{
+		animation: id8 15s infinite;
+		@include before(blue);
+	}
+	@keyframes id8{
+		0%{
+			height: 0px;
+		}
+		100%{
+			height: 60px;
+		}
+	}
 }
-.field1{
-	.col-sm-3:first-child{
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: red;
-				top: 35px;
-			}
-		}
-	}
-	.col-sm-3:nth-child(2){
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: green;
-				top: 35px;
-			}
-		}
-	}
-	.col-sm-3:nth-child(3){
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: #3498DB;
-				top: 35px;
-			}
-		}
-	}
-	.col-sm-3:last-child{
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: #CDBFE3;
-				top: 35px;
-			}
-		}
-	}
 
-}
-.field2{
-	margin-bottom: 50px;
-	.col-sm-3:first-child{
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: #F300D3;
-				top: 35px;
-			}
-		}
-	}
-	.col-sm-3:nth-child(2){
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: yellow;
-				top: 35px;
-			}
-		}
-	}
-	.col-sm-3:nth-child(3){
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: blue;
-				top: 35px;
-			}
-		}
-	}
-	.col-sm-3:last-child{
-		.cont-habi{
-			.cont{
-				height: 104px;
-				background: orange;
-				top: 35px;
-			}
-		}
-	}
-
-}
 /// contacto
 #contacto{
 	padding-top: 50px;
