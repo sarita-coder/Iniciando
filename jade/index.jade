@@ -15,26 +15,31 @@ body
 					span.icon-bar
 					span.icon-bar
 					span.icon-bar
-				a.navbar-brand(href='#')
+				a.navbar-brand(href='#hero')
 					span.logo
 			#collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
 					li.active
-						a.link-header(href='#Sobremi') Sobre mí
+						a.link1.link-header(href='#Sobremi') Sobre mí
 					li
-						a.link-header(href='#portafolio') Portafolio
+						a.link2.link-header(href='#portafolio') Portafolio
 					li
-						a.link-header(href='#habilidades') Habilidades
+						a.link3.link-header(href='#habilidades') Habilidades
 					li
-						a.link-header(href='#contacto') Contacto
+						a.link4.link-header(href='#contacto') Contacto
 	//fin header	
-	.Hero
+	.Hero#hero
 		.opacity
-			.container-fluid
-				
+			.banner
+				.marco-pantalla
+					.cont-pantalla
+						.imagen1
+							.imagen2
+								textarea(readonly)
+				.teclado
+					.touch
+					.focos
 
-
-						
 	#Sobremi
 		.container.text-center
 			.row
@@ -101,15 +106,15 @@ body
 		.container.text-center.contacto
 			.row
 				+title("Contactame")
-				.fa.fa-spinner.fa-spin.fa-3x.fa-fw
-					span.sr-only
 			.row
 				.redes
-					a(href="").fa.fa-github
-					a(href="").fa.fa-envelope-o
-					a(href="").fa.fa-whatsapp
-					a(href="").fa.fa-linkedin-square
-					a(href="").fa.fa-pinterest-square
+					a(href="https://github.com/sarita-coder").fa.fa-github
+					a(href="https://plus.google.com/u/0/103995783096870228612/about").fa.fa-google-plus-square
+					a(href="https://www.facebook.com/edised.roman").fa.fa-facebook
+					a(href="https://www.linkedin.com/in/saritacoder").fa.fa-linkedin-square
+				.correo
+					p sarita.roman.colonio@gmail.com
+
 
 	footer
 		.container.text-center
