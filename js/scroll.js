@@ -7,7 +7,6 @@ $(document).scroll(function() {
         $(".icon-bar").removeClass("bar-inv");
         $(".logo").addClass("logo-inver1");
         $(".logo").removeClass("logo-inver");                
-;
         $(".link-header").removeClass("inver1");
         $(".navbar-fixed-top").removeClass("nav-transp");
     } else { 

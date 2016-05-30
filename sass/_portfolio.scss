@@ -33,6 +33,9 @@
 	background-color: $text-white;
 
 }
+.inver1{
+	color: $bg-celeste;
+}
 
 .nav {
 	li{
@@ -48,7 +51,7 @@
 .logo-inver{
 	background-image: url(../img/SARITA-02.png);
 	background-color: #fff;
-	box-shadow: 10px 15px 10px  $bg-celeste;
+	//box-shadow: 10px 15px 10px  $bg-celeste;
 }
 .navbar-nav{
 	transform: translateX(0%);
@@ -118,14 +121,14 @@
 	background-size: cover;
 }
 .opacity{
-	background: rgba(0, 0, 0, 0.09);
+	background: #56D9CD;
 	height: 100vh;
-	  -ms-display: flex;
-  display: flex;
+	-ms-display: flex;
+  	display: flex;
   /* vertical center */
-  align-items: center;
+  	align-items: center;
   /* horizontal center */
-  justify-content: center;
+  	justify-content: center;
 
 }
 .nav-transp {
@@ -138,6 +141,18 @@
 	font-size: 3rem;
 	padding-bottom: 30px;
 }
+.titulo{
+	display: flex;
+    justify-content: space-between;
+    p{
+	 	animation-delay: 0.2s;
+	 	font-family: $titulo-font;
+	 	color: $bg-rosa;
+	 	font-size: 4rem;
+    }
+
+}
+
 .banner{
 	width:50%;
 	.marco-pantalla{
@@ -263,7 +278,9 @@
 }
 .ln1{
 	background: $bg-celeste;
+	margin: auto;
 	height: 1px;
+	width:70%;
 
 }
 .contenedor{
@@ -291,13 +308,17 @@
 }
  .poligono{
  	margin:20px 0;
- 	width: 120px;
- 	height: 120px;
- 	background-image:url('../img/sobre_mi.jpg');
-    background-position: 50% 34%;
+ 	width: 100%;
+ 	height: 340px;
+ 	background-position: 50% 34%;
     background-size: 150%;
     border-radius: 50%;
-    margin-left: 75px;
+  	padding:80px 0;
+
+
+ }
+ .actitudes{
+ 	display: block;
  }
 .col-foto{
 	p:first-child{
@@ -466,6 +487,8 @@
 .field1, .field2{
 	margin-bottom: 20px;
 }
+// habilidades
+
 .cont-habi{
 	height: 170px;
 	width: 100%;
@@ -585,7 +608,7 @@
 #contacto{
 	padding-top: 50px;
 	height: 560px;
-	background-image: url("../img/contacto4.jpg");
+	background: #F5A503;
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -596,7 +619,9 @@
 	}
 }
 	.redes{
+		margin:auto;
 		margin-top: 50px;
+		width: 80%;
 		a{
 			display: inline-block;
 			width: 25px;

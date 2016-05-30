@@ -5,8 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(https://fonts.googleapis.com/css?family=Marmelad);
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5814,7 +5815,8 @@ button.close {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poiret One';
+  font-family: 'Noto Serif';
+  font-weight: 100;
   font-size: 20px;
   font-weight: bold;
   box-sizing: border-box; }
@@ -5841,11 +5843,11 @@ a:hover {
   background: #ffffff; }
 
 .header {
-  background: #33ccff;
+  background: #F2385A;
   color: #fff; }
 
 .icon-bar {
-  background: #33ccff; }
+  background: #F2385A; }
 
 .navbar-brand {
   padding: 5px; }
@@ -5867,16 +5869,18 @@ a:hover {
   box-shadow: 10px 15px 10px #3A6F77;
   background-color: #fff; }
 
+.inver1 {
+  color: #F2385A; }
+
 .nav li .link-header {
   color: white; }
 .nav li a:hover {
-  color: #33ccff;
+  color: #F2385A;
   background: white; }
 
 .logo-inver {
   background-image: url(../img/SARITA-02.png);
-  background-color: #fff;
-  box-shadow: 10px 15px 10px #33ccff; }
+  background-color: #fff; }
 
 .navbar-nav {
   transform: translateX(0%);
@@ -5924,7 +5928,7 @@ a:hover {
   background: #fff; }
 
 .bar-inv {
-  background: #33ccff; }
+  background: #F2385A; }
 
 .icon-bar {
   -webkit-transition-property: all;
@@ -5943,7 +5947,7 @@ a:hover {
   background-size: cover; }
 
 .opacity {
-  background: rgba(0, 0, 0, 0.09);
+  background: #56D9CD;
   height: 100vh;
   -ms-display: flex;
   display: flex;
@@ -5956,10 +5960,19 @@ a:hover {
   background: transparent; }
 
 .title {
-  color: #33ccff;
-  font-family: "Sigmar One";
+  color: #F2385A;
+  font-family: "Abril Fatface";
   font-size: 3rem;
   padding-bottom: 30px; }
+
+.titulo {
+  display: flex;
+  justify-content: space-between; }
+  .titulo p {
+    animation-delay: 0.2s;
+    font-family: "Abril Fatface";
+    color: #F2385A;
+    font-size: 4rem; }
 
 .banner {
   width: 50%; }
@@ -6059,7 +6072,7 @@ a:hover {
   border-left: 55px solid transparent; }
 
 .row .col-2:nth-child(2) {
-  background: #33ccff;
+  background: #F2385A;
   border-: 13px solid #fff;
   -ms-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%; }
@@ -6069,16 +6082,18 @@ a:hover {
   font-size: 30px; }
 
 .ln1 {
-  background: #33ccff;
-  height: 1px; }
+  background: #F2385A;
+  margin: auto;
+  height: 1px;
+  width: 70%; }
 
 .contenedor {
   height: 30px; }
 
 .etiqueta {
   width: 0px;
-  border-left: 50px solid #33ccff;
-  border-right: 50px solid #33ccff;
+  border-left: 50px solid #F2385A;
+  border-right: 50px solid #F2385A;
   left: 50%;
   margin-left: -50px;
   position: relative; }
@@ -6096,22 +6111,24 @@ a:hover {
 
 .poligono {
   margin: 20px 0;
-  width: 120px;
-  height: 120px;
-  background-image: url("../img/sobre_mi.jpg");
+  width: 100%;
+  height: 340px;
   background-position: 50% 34%;
   background-size: 150%;
   border-radius: 50%;
-  margin-left: 75px; }
+  padding: 80px 0; }
+
+.actitudes {
+  display: block; }
 
 .col-foto p:first-child {
   font-weight: lighter;
   font-size: 30px;
-  font-family: "Sigmar One";
-  color: #33ccff;
+  font-family: "Abril Fatface";
+  color: #F2385A;
   margin-top: 30px; }
 .col-foto hr:nth-child(2) {
-  background: #33ccff;
+  background: #F2385A;
   height: 3px;
   border: none; }
 .col-foto p:nth-child(3) a {
@@ -6121,11 +6138,11 @@ a:hover {
   font-weight: bold; }
 .col-foto p:nth-child(3) a:hover {
   color: white;
-  background: #33ccff; }
+  background: #F2385A; }
 
 .description .col-sm-6 p {
   margin-top: 25px;
-  font-family: "Poiret One";
+  font-family: "Noto Serif";
   color: #2C3E50;
   font-size: 19px;
   font-weight: bold; }
@@ -6180,12 +6197,12 @@ a:hover {
           font-size: 15px;
           margin: 0; }
         .col-sm-4 .portafolio .pantalla .carta .atras .texto:hover {
-          background: #33ccff;
+          background: #F2385A;
           color: white; }
         .col-sm-4 .portafolio .pantalla .carta .atras a {
-          color: #33ccff; }
+          color: #F2385A; }
         .col-sm-4 .portafolio .pantalla .carta .atras a:hover {
-          background: #33ccff;
+          background: #F2385A;
           color: white;
           display: inline-block;
           width: 100%;
@@ -6402,7 +6419,7 @@ a:hover {
 #contacto {
   padding-top: 50px;
   height: 560px;
-  background-image: url("../img/contacto4.jpg");
+  background: #F5A503;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -6412,7 +6429,9 @@ a:hover {
     color: white; }
 
 .redes {
-  margin-top: 50px; }
+  margin: auto;
+  margin-top: 50px;
+  width: 80%; }
   .redes a {
     display: inline-block;
     width: 25px;
@@ -6422,7 +6441,7 @@ a:hover {
     margin: 35px; }
   .redes a:hover {
     text-decoration: none;
-    color: #33ccff; }
+    color: #F2385A; }
 
 footer {
   padding-top: 20px;
