@@ -4,41 +4,33 @@ mixin img-100-jpg(image)
 mixin img-100-png(image)
 	img.w-100(src="img/"+image+".png")
 
-mixin portafolio(image,h,texto,texto1,texto2,texto3,texto4,texto5)
-	.col-sm-4
-		.portafolio
-			.pantalla
-				.carta
-					.lado.frente
-						+img-100-png(image)
-					.lado.atras
-						h4=(texto)
-						if  h==2
-							p.texto=(texto1)
-							p.texto=(texto2)
-						if h==3
-							p.texto=(texto1)
-							p.texto=(texto2)
-							p.texto=(texto3)
-						if h==4
-							p.texto=(texto1)
-							p.texto=(texto2)
-							p.texto=(texto3)
-							p.texto=(texto4)
-						if h==5
-							p.texto=(texto1)
-							p.texto=(texto2)
-							p.texto=(texto3)
-							p.texto=(texto4)
-							p.texto=(texto5)
-						else
-							p=(texto6)
-						a(href="") Ver la Página
-				.btn-star
-				.parante
-				.base
-			
-				
+mixin portafolio(name,h,texto,texto1,texto2,texto3,texto4,texto5)
+	.col-sm-8.col-sm-offset-2
+		if (h==1)
+			.row
+				.col-sm-6.col-xs-12
+					.portafolio
+						.banner2(class=name)
+				.col-sm-6.col-xs-12
+					.texto
+						h2 Flatness
+						p Flecha:
+							span=texto
+						p Retos:
+							span=texto1	
+		else 
+			.row
+				.col-sm-6.col-xs-12
+					.texto
+						h2 Flatness
+						p Flecha:
+							span=texto
+						p Retos:
+							span=texto1	
+				.col-sm-6.col-xs-12
+					.portafolio
+						.banner2(class=name)
+
 					
 			
 mixin title(texto)
@@ -52,11 +44,18 @@ mixin colSobreMi(image)
 				+img-100-png(image)
 
 mixin habilidades(texto,name)
-	.col-sm-3
+	.col-sm-3.col-xs-12
 		.cont-habi.text-center
 			.cuello
 			.tubo(class=name)
 			
 		p=texto
+
+mixin habilidad(p,texto)
+	.col-sm-3.col-xs-6
+		.especialidad
+			a(href="")
+				div(id="p")
+			p=texto
 
 

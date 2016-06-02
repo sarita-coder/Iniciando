@@ -24,5 +24,8 @@
    // var texto = "Desarrolladora Front-end, economista y estudiante de geomática, comprometida con los estudios y el trabajo, dispuesta a asumir retos y responsabilidades para convertirme en una “full-stack developer&quot;.";
    // // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
    // maquina("maquina",texto,50);
+ $(function(){
+  	$('.portfolio_item').mixItUp();
+});
 
    

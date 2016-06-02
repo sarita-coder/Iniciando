@@ -4,9 +4,10 @@ html(lang="en")
 head
 	meta(charset="UTF-8")
 	title Sarita Coder
+	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
 	link(rel="stylesheet", href="css/animate.css")
 	link(rel="stylesheet", href="css/main.css")
-	link(rel="stylesheet", href="./font-awesome/css/font-awesome.min.css")
+	
 body
 	// Fixed navbar
 	#menu.navbar.navbar-fixed-top.nav-transp(role='navigation')
@@ -43,74 +44,126 @@ body
 				.teclado
 					.touch
 					.focos
+	.contactame
+		ul
+			li
+				a(href="https://www.facebook.com/edised.roman" target="_blank").fa.fa-facebook
+			li 
+				a(href="https://github.com/sarita-coder" target="_blank").fa.fa-github
+			li
+				a(href="https://www.linkedin.com/in/saritacoder" target="_blank").fa.fa-linkedin
+			li
+				a(href="https://plus.google.com/u/0/103995783096870228612/about" target="_blank").fa.fa-google-plus
+			li
+				a(href="mailto:sarita.roman.colonio@gmail.com").fa.fa-envelope-o
+			//li
+				a(href="" target="_blank") Contactame
 
-	#Sobremi
+
+
+	
+	
+	.main#Sobremi
 		.container.text-center
 			.row
-				.col-sm-3
-					.col-etiqueta.text-center
-						.contedor
-							.etiqueta.etiq
-						.poligono
-							p 
-								a.actitudes(href="") Comprometida
-							hr.ln1
-							p 
-								a.actitudes(href="") Fuerza
-							hr.ln1
-							p 
-								a.actitudes(href="") Perseverante
-							hr.ln1
-							p 
-								a.actitudes(href="") Optimista
-							hr.ln1
-							p 
-								a.actitudes(href="") Naturaleza
-						
-						.contenedor.etiqueta.etiq2
-				.col-sm-9.pd-50
-					.row
-						.col-foto
-							p Sarita Román Colonio  
-							hr.ln1
-							p 
-								a.carrera(href="") ECONOMISTA
-								a.carrera(href="") FRONTED
-								a.carrera(href="") GEOMÁTICA
-					.row.description
-						.col-sm-6
-							p Front-end, apasionada por el código, con muchas ganas para afrontar cada reto que se me presente por que siento que es una nueva oportunidad de demostrar que todo es posible, busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubri que toda idea o sueño se puede materializar, como tambien amar a Google, se ha convertido en mi compañero de día y con el descubri que podemos programar un mundo diferente. Fueron 5 meses que permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en grupo. Otra cosa que me enamora es la naturaleza sobre todo las cataratas orgulloza de mi país.
-						.col-sm-6
-							img.foto.w-100(src="img/sobremi.png")
-							h2 "Programando con pasión y espíritu verde"
+				+title("Sobre mí")
+			.row.description
+				.col-sm-5.col-sm-offset-1
+					p Sarita Román Colonio 
+					p Front-end, apasionada por el código, busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar, como tambien amar a Google, se ha convertido en mi compañero de día y con el descubri que podemos programar un mundo diferente. Fueron 5 meses que permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en grupo. Otra cosa que me enamora es la naturaleza sobre todo las cataratas.
+				.col-sm-5
+					img.foto.w-100(src="img/sobremi.png")
+
+	.w-100#lema
+		.container.lema.text-center
+			h2 "Programando con pasión y espíritu verde"
 														
-	.main#portafolio
-		.container.text-center
-			.row.portafolio
+
+	.main.our_woks_area.section-padding#portafolio
+		.container
+			.row.text-center
 				+title("Portafolio")
-				+portafolio("portfolio_1",2,"BLOG LOVE","HTML","CSS")
-				+portafolio("portfolio_1",3,"BLOG LOVE","HTML","CSS","SASS")
-				+portafolio("portfolio_1",4,"BLOG LOVE","HTML","CSS","SASS","JADE")
-			.row.portafolio
-				+portafolio("portfolio_1",4,"BLOG LOVE","HTML","CSS","SASS","JADE")
-				+portafolio("portfolio_1",3,"BLOG LOVE","HTML","CSS","JS")
-				+portafolio("portfolio_1",5,"BLOG LOVE","HTML","CSS","SASS","JADE","JS - Jqry")
+			.row
+				.col-sm-2.col-sm-offset-1.col-xs-2
+					.about_text.text-left
+						h1 M
+							span ís 
+						h1
+							span proyectos 
+				.col-sm-8.col-xs-10
+					.about_p
+						p Trabajos que realize y del que forme parte de proyectos en equipo con tiempos de entrega especiales me han permitido aprender y seguir evolucionando en cada proyecto.
+			.row
+				.col-md-12.text-center
+					.portfolio-filter
+						ul
+							li.filter.active(data-filter="all") All
+							li.filter(data-filter=".css") CSS
+							li.filter(data-filter=".sass") SASS
+							li.filter(data-filter=".jade") JADE
+							li.filter(data-filter=".js") JS
+							li.filter(data-filter=".grupal") Grupal
+					.portfolio_item
+						.mix.category-1.css
+							img(src="img/whatsap.png")
+						.mix.category-1.jade
+							img(src="img/future-imperfect.png")
+						.mix.category-2.js
+							img(src="img/flatness.png")
+						.mix.category-1.grupal
+							img(src="img/flat.png")
+						.mix.category-1.grupal
+							img(src="img/republica.png")
+						.mix.category-2.sass
+							img(src="img/portfolio_1.png")
+						.mix.category-2.sass
+							img(src="img/triangle.png")
+						.mix.category-2.js
+							img(src="img/reloj_digital.png")
+
+	.w-100#lema
+		.container.lema.text-center
+			h2 "Programando con pasión y espíritu verde"
+
+		
 	.main#habilidades
 		.container.text-center
 			.row
 				+title("Habilidades")
-			.row.field1
-				.pulsate
-				.pulsate
-				+habilidades("Html 80%",'id1')
-				+habilidades("Css3 75%",'id2')
-				+habilidades("Js 30%",'id3')
-				+habilidades("Bootstrap 50%",'id4')
-			.row.field2
-				+habilidades("Jade 70%",'id5')
-				+habilidades("Sass 70%",'id6')
-				+habilidades("Wordpress 0%",'id7')
-				+habilidades("Base de Datos 40%",'id8')
+			.row
+				.col-sm-4.col-xs-12
+					.especialidad
+						a(href="")
+							span.fa.fa-code
+						p Desarrolladora Web
+						p Maquetación de páginas web responsive con diferentes tecnologías: Html, Css, Sass, Jade, Js, Jquery, Worpress, Base de datos.
+
+				.col-sm-4.col-xs-12
+					.especialidad
+						a(href="")
+							span.fa.fa-globe
+						p Geomática
+						p Desarrolo de aplicaciones para la creación y administración de informácion espacial para mejorar la habilidad del ususario para acceder a información y compartirla de manera más efectiva.
+
+				.col-sm-4.col-xs-12
+					.especialidad
+						a(href="")
+							span.fa.fa-check-circle-o
+						p Economía
+						p 
+
+			//- .row.field1
+			//- 	.pulsate
+			//- 	.pulsate
+			//- 	+habilidades("Html 80%",'id1')
+			//- 	+habilidades("Css3 75%",'id2')
+			//- 	+habilidades("Js 30%",'id3')
+			//- 	+habilidades("Bootstrap 50%",'id4')
+			//- .row.field2
+			//- 	+habilidades("Jade 70%",'id5')
+			//- 	+habilidades("Sass 70%",'id6')
+			//- 	+habilidades("Wordpress 0%",'id7')
+			//- 	+habilidades("Base de Datos 40%",'id8')
 
 	.main#contacto
 		.container.text-center.contacto
@@ -135,6 +188,8 @@ body
 script(src='js/jquery.js')
 script(src='http://code.jquery.com/jquery-1.11.2.min.js')
 script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+script(src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js")
+//script(src='js/jquery.mixitup.js')	
 script(type='text/javascript', src='js/bootstrap.min.js')
 script(src='js/scroll.js')
 script(src='js/main.js')

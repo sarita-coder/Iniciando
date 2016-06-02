@@ -1,15 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Marmelad);
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
-@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Candal);
 *{
 	padding:0;
 	margin:0;
-	font-family: 'Noto Serif';
-	font-weight:100;
-	font-size:20px;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-weight:lighter;
+	font-size:18px;
 	box-sizing: border-box;
+
 }
 
 .w-100{
@@ -33,5 +32,5 @@ a:hover{
 	text-decoration: none;
 }
 .pd-50{
-	padding-top: 50px;
+	margin-top: 50px;
 }
