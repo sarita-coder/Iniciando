@@ -6044,7 +6044,7 @@ a:hover {
           top: 0; }
         .banner .marco-pantalla .cont-pantalla .imagen1 textarea {
           opacity: 0;
-          width: 20px;
+          min-width: 200px;
           height: 10px;
           position: relative;
           top: 50%;
