@@ -5838,6 +5838,9 @@ a:hover {
 .pd-50 {
   margin-top: 50px; }
 
+.pb-50 {
+  margin-bottom: 50px; }
+
 .navbar-fixed-top {
   background: #ffffff; }
 
@@ -6395,6 +6398,8 @@ a:hover {
     margin-bottom: 50px;
     padding: 8px 22px;
     cursor: pointer; }
+  .portfolio-filter ul li:hover {
+    border: 3px solid #F2385A; }
   .portfolio-filter ul li:active {
     border: 3px solid #F2385A;
     color: #000;
@@ -6402,7 +6407,10 @@ a:hover {
 
 .portfolio_item .mix img {
   float: left;
-  width: 200px; }
+  width: 200px;
+  height: 120px; }
+.portfolio_item .mix img:hover {
+  border: 2px solid #F2385A; }
 
 #contacto {
   padding-top: 50px;

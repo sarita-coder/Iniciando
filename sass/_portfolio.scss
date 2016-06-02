@@ -611,6 +611,9 @@
 			cursor: pointer;
 
 		}
+		li:hover{
+			border:3px solid $bg-celeste;
+		}
 		li:active{
 			border:3px solid $bg-celeste;
 			color:#000;
@@ -623,6 +626,11 @@
 		img{
 			float:left;
 			width: 200px;
+			height: 120px;
+			//border: 2px solid $bg-celeste;
+		}
+		img:hover{
+			border: 2px solid $bg-celeste;
 		}
 	}
 }
