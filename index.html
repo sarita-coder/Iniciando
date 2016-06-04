@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/ihover.css"/>
   <link rel="stylesheet" href="css/main.css"/>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Fixed navbar-->
   <div id="menu" role="navigation" class="navbar navbar-fixed-top nav-transp">
     <div class="container padd">
@@ -17,7 +18,8 @@
       </div>
       <div id="collapse" class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#Sobremi" class="link1 link-header">Sobre mí</a></li>
+          <li class="active hidden"><a href=""></a></li>
+          <li><a href="#Sobremi" class="link1 link-header">Sobre mí</a></li>
           <li><a href="#portafolio" class="link2 link-header">Portafolio</a></li>
           <li><a href="#habilidades" class="link3 link-header">Habilidades</a></li>
           <li><a href="#contacto" class="link4 link-header">Contacto</a></li>
@@ -70,17 +72,17 @@
         </div>
       </div>
       <div class="row description">
-        <div class="col-sm-5 col-sm-offset-1">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <div class="foto"></div>
           <p>Sarita Román Colonio </p>
-          <p>Front-end, apasionada por el código, busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar, como tambien amar a Google, se ha convertido en mi compañero de día y con el descubri que podemos programar un mundo diferente. Fueron 5 meses que permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en grupo. Otra cosa que me enamora es la naturaleza sobre todo las cataratas.</p>
+          <p>Busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar. Como también amar a Google, que se ha convertido en mi compañero, mostrándome que podemos programar un mundo diferente. Han sido 5 meses que me permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en equipo.</p>
         </div>
-        <div class="col-sm-5"><img src="img/sobremi.png" class="foto w-100"/></div>
       </div>
     </div>
   </div>
   <div id="lema" class="w-100">
     <div class="container lema text-center">
-      <h2>"Programando con pasión y espíritu verde"</h2>
+      <div id="maquina" class="w-100"></div>
     </div>
   </div>
   <div id="portafolio" class="main our_woks_area section-padding">
@@ -91,15 +93,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-2 col-sm-offset-1 col-xs-2">
-          <div class="about_text text-left">
-            <h1>M<span>ís </span></h1>
-            <h1><span>proyectos </span></h1>
-          </div>
-        </div>
-        <div class="col-sm-8 col-xs-10">
-          <div class="about_p">
-            <p>Trabajos según la tecnología utilizada y del que forme parte del equipo, con tiempos de entrega especiales me han permitido aprender y seguir evolucionando en cada proyecto. </p>
+        <div class="col-sm-12">
+          <div class="about_p text-center">
+            <p>Aquí algunos de los trabajos realizados por tipo de tecnología. </p>
           </div>
         </div>
       </div>
@@ -118,18 +114,18 @@
           <div class="portfolio_item">
             <div class="mix category-1 css"><a href="http://sarita-coder.github.io/whassapt" target="_blank"><img src="img/whatsap.png"/></a></div>
             <div class="mix category-1 jade"><a href="http://sarita-coder.github.io/future-imperfect" target="_blank"><img src="img/future-imperfect.png"/></a></div>
-            <div class="mix category-1 js"><a href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank"><img src="img/flatness.png"/></a></div>
-            <div class="mix category-1 grupal"><a href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank"><img src="img/flat.png"/></a></div>
-            <div class="mix category-1 grupal"><a href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank"><img src="img/republica.png"/></a></div>
-            <div class="mix category-1 sass"><a href="http://sarita-coder.github.io/Love-Blog" target="_blank"><img src="img/portfolio_1.png"/></a></div>
             <div class="mix category-1 sass"><a href="http://sarita-coder.github.io/triangle-free" target="_blank"><img src="img/triangle.png"/></a></div>
             <div class="mix category-1 js"><a href="http://sarita-coder.github.io/reloj-digital" target="_blank"><img src="img/reloj_digital.png"/></a></div>
-            <div class="mix category-1 js"><a href="http://sarita-coder.github.io/reloj-digital" target="_blank"><img src="img/reloj_digital.png"/></a></div>
-            <div class="mix category-1 grupal"><a href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank"><img src="img/republica.png"/></a></div>
+            <div class="mix category-1 grupal sass jade"><a href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank"><img src="img/republica.png"/></a></div>
             <div class="mix category-1 sass"><a href="http://sarita-coder.github.io/Love-Blog" target="_blank"><img src="img/portfolio_1.png"/></a></div>
-            <div class="mix category-1 sass"><a href="http://sarita-coder.github.io/triangle-free" target="_blank"><img src="img/triangle.png"/></a></div>
-            <div class="mix category-1 jade"><a href="http://sarita-coder.github.io/future-imperfect" target="_blank"><img src="img/flatness.png"/></a></div>
-            <div class="mix category-1 sass"><a href="http://sarita-coder.github.io/future-imperfect" target="_blank"><img src="img/flat.png"/></a></div>
+            <div class="mix category-1 jade">
+              <div class="ih-item square effect8 scale_up"></div><a href="#" target="_blank">
+                <div class="img"><img src="img/flat-theme-01.png"/></div>
+                <div class="info">
+                  <h3>FLAT THEME</h3><a href="http://sazabache.github.io/Flat-theme"><span class="fa fa-arrow-right"></span></a>
+                </div></a>
+            </div>
+            <div class="mix category-1 sass grupal"><a href="http://sarita-coder.github.io/future-imperfect" target="_blank"><img src="img/flat.png"/></a></div>
           </div>
         </div>
       </div>
@@ -137,7 +133,7 @@
   </div>
   <div id="lema" class="w-100">
     <div class="container lema text-center">
-      <h2>"Programando con pasión y espíritu verde"</h2>
+      <h2>Front-end, apasionada por el código y amante de la naturaleza.</h2>
     </div>
   </div>
   <div id="habilidades" class="main">
@@ -148,7 +144,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-4 col-xs-12 col-sm-offset-2">
           <div class="especialidad"><a href=""><span class="fa fa-code"></span></a>
             <p>Desarrolladora Web</p>
             <p>Maquetación de páginas web responsive con diferentes tecnologías: Html, Css, Sass, Jade, Js, Jquery, Worpress, Base de datos.</p>
@@ -158,12 +154,6 @@
           <div class="especialidad"><a href=""><span class="fa fa-globe"></span></a>
             <p>Geomática</p>
             <p>Desarrolo de aplicaciones para la creación y administración de informácion espacial para mejorar la habilidad del ususario para acceder a información y compartirla de manera más efectiva.</p>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="especialidad"><a href=""><span class="fa fa-check-circle-o"></span></a>
-            <p>Economía</p>
-            <p> </p>
           </div>
         </div>
       </div>
@@ -177,7 +167,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="redes"><a href="https://github.com/sarita-coder" class="fa fa-github"></a><a href="https://plus.google.com/u/0/103995783096870228612/about" class="fa fa-google-plus-square"></a><a href="https://www.facebook.com/edised.roman" class="fa fa-facebook"></a><a href="https://www.linkedin.com/in/saritacoder" class="fa fa-linkedin-square"></a></div>
+        <div class="redes"><a href="https://github.com/sarita-coder" target="_blank" class="fa fa-github"></a><a href="https://plus.google.com/u/0/103995783096870228612/about" target="_blank" class="fa fa-google-plus-square"></a><a href="https://www.facebook.com/edised.roman" target="_blank" class="fa fa-facebook"></a><a href="https://www.linkedin.com/in/saritacoder" target="_blank" class="fa fa-linkedin-square"></a></div>
         <div class="correo">
           <p>sarita.roman.colonio@gmail.com</p>
         </div>

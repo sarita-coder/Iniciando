@@ -7,9 +7,10 @@ head
 	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
 	meta(name="viewport" content="width=device-width, initial-scale=1")
 	link(rel="stylesheet", href="css/animate.css")
+	link(rel="stylesheet", href="css/ihover.css")
 	link(rel="stylesheet", href="css/main.css")
 	
-body
+body(data-spy="scroll" data-target=".navbar" data-offset="50")
 	// Fixed navbar
 	#menu.navbar.navbar-fixed-top.nav-transp(role='navigation')
 		.container.padd
@@ -22,7 +23,9 @@ body
 					span.logo 
 			#collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
-					li.active
+					li.active.hidden
+						a(href="")
+					li
 						a.link1.link-header(href='#Sobremi') Sobre mí
 					li
 						a.link2.link-header(href='#portafolio') Portafolio
@@ -45,6 +48,7 @@ body
 				.teclado
 					.touch
 					.focos
+				
 	.contactame
 		ul
 			li
@@ -65,31 +69,26 @@ body
 			.row
 				+title("Sobre mí")
 			.row.description
-				.col-sm-5.col-sm-offset-1
+				.col-sm-8.col-sm-offset-2.text-center
+					.foto
 					p Sarita Román Colonio 
-					p Front-end, apasionada por el código, busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar, como tambien amar a Google, se ha convertido en mi compañero de día y con el descubri que podemos programar un mundo diferente. Fueron 5 meses que permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en grupo. Otra cosa que me enamora es la naturaleza sobre todo las cataratas.
-				.col-sm-5
-					img.foto.w-100(src="img/sobremi.png")
+					p Busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar. Como también amar a Google, que se ha convertido en mi compañero, mostrándome que podemos programar un mundo diferente. Han sido 5 meses que me permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en equipo.
+				
+					
 
 	.w-100#lema
 		.container.lema.text-center
-			h2 "Programando con pasión y espíritu verde"
+			.w-100#maquina
+				
 														
-
 	.main.our_woks_area.section-padding#portafolio
 		.container
 			.row.text-center
 				+title("Portafolio")
 			.row
-				.col-sm-2.col-sm-offset-1.col-xs-2
-					.about_text.text-left
-						h1 M
-							span ís 
-						h1
-							span proyectos 
-				.col-sm-8.col-xs-10
-					.about_p
-						p Trabajos según la tecnología utilizada y del que forme parte del equipo, con tiempos de entrega especiales me han permitido aprender y seguir evolucionando en cada proyecto. 
+				.col-sm-12
+					.about_p.text-center
+						p Aquí algunos de los trabajos realizados por tipo de tecnología. 
 			.row.pb-50
 				.col-md-12.text-center
 					.portfolio-filter
@@ -107,46 +106,36 @@ body
 						.mix.category-1.jade
 							a(href="http://sarita-coder.github.io/future-imperfect" target="_blank")
 								img(src="img/future-imperfect.png")
-						.mix.category-1.js
-							a(href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank")
-								img(src="img/flatness.png")
-						.mix.category-1.grupal
-							a(href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank")
-								img(src="img/flat.png")
-						.mix.category-1.grupal
-							a(href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank")
-								img(src="img/republica.png")
-						.mix.category-1.sass
-							a(href="http://sarita-coder.github.io/Love-Blog" target="_blank")
-								img(src="img/portfolio_1.png")
 						.mix.category-1.sass
 							a(href="http://sarita-coder.github.io/triangle-free" target="_blank")
 								img(src="img/triangle.png")
 						.mix.category-1.js
 							a(href="http://sarita-coder.github.io/reloj-digital" target="_blank")
 								img(src="img/reloj_digital.png")
-						.mix.category-1.js
-							a(href="http://sarita-coder.github.io/reloj-digital" target="_blank")
-								img(src="img/reloj_digital.png")
-						.mix.category-1.grupal
+						.mix.category-1.grupal.sass.jade
 							a(href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank")
 								img(src="img/republica.png")
 						.mix.category-1.sass
 							a(href="http://sarita-coder.github.io/Love-Blog" target="_blank")
 								img(src="img/portfolio_1.png")
-						.mix.category-1.sass
-							a(href="http://sarita-coder.github.io/triangle-free" target="_blank")
-								img(src="img/triangle.png")
 						.mix.category-1.jade
-							a(href="http://sarita-coder.github.io/future-imperfect" target="_blank")
-								img(src="img/flatness.png")
-						.mix.category-1.sass
+							.ih-item.square.effect8.scale_up
+							a(href="#" target="_blank")
+								.img
+									img(src="img/flat-theme-01.png")
+								.info
+									h3 FLAT THEME
+									a(href="http://sazabache.github.io/Flat-theme")
+										span.fa.fa-arrow-right
+
+
+						.mix.category-1.sass.grupal
 							a(href="http://sarita-coder.github.io/future-imperfect" target="_blank")
 								img(src="img/flat.png")
 
 	.w-100#lema
 		.container.lema.text-center
-			h2 "Programando con pasión y espíritu verde"
+			h2 Front-end, apasionada por el código y amante de la naturaleza.
 
 		
 	.main#habilidades
@@ -154,7 +143,7 @@ body
 			.row
 				+title("Habilidades")
 			.row
-				.col-sm-4.col-xs-12
+				.col-sm-4.col-xs-12.col-sm-offset-2
 					.especialidad
 						a(href="")
 							span.fa.fa-code
@@ -167,37 +156,22 @@ body
 							span.fa.fa-globe
 						p Geomática
 						p Desarrolo de aplicaciones para la creación y administración de informácion espacial para mejorar la habilidad del ususario para acceder a información y compartirla de manera más efectiva.
-
-				.col-sm-4.col-xs-12
-					.especialidad
-						a(href="")
-							span.fa.fa-check-circle-o
-						p Economía
-						p 
-
-			//- .row.field1
-			//- 	.pulsate
-			//- 	.pulsate
-			//- 	+habilidades("Html 80%",'id1')
-			//- 	+habilidades("Css3 75%",'id2')
-			//- 	+habilidades("Js 30%",'id3')
-			//- 	+habilidades("Bootstrap 50%",'id4')
-			//- .row.field2
-			//- 	+habilidades("Jade 70%",'id5')
-			//- 	+habilidades("Sass 70%",'id6')
-			//- 	+habilidades("Wordpress 0%",'id7')
-			//- 	+habilidades("Base de Datos 40%",'id8')
-
+				//- .col-sm-4.col-xs-12
+				//- 	.especialidad
+				//- 		a(href="")
+				//- 			span.fa.fa-check-circle-o
+				//- 		p Economía
+				//- 		p 
 	.main#contacto
 		.container.text-center.contacto
 			.row
 				+title("Contactame")
 			.row
 				.redes
-					a(href="https://github.com/sarita-coder").fa.fa-github
-					a(href="https://plus.google.com/u/0/103995783096870228612/about").fa.fa-google-plus-square
-					a(href="https://www.facebook.com/edised.roman").fa.fa-facebook
-					a(href="https://www.linkedin.com/in/saritacoder").fa.fa-linkedin-square
+					a(href="https://github.com/sarita-coder" target="_blank").fa.fa-github
+					a(href="https://plus.google.com/u/0/103995783096870228612/about" target="_blank").fa.fa-google-plus-square
+					a(href="https://www.facebook.com/edised.roman" target="_blank").fa.fa-facebook
+					a(href="https://www.linkedin.com/in/saritacoder" target="_blank").fa.fa-linkedin-square
 				.correo
 					p sarita.roman.colonio@gmail.com
 

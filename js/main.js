@@ -1,31 +1,26 @@
-// function maquina(contenedor,texto,intervalo){
-//    // Calculamos la longitud del texto
-//    longitud = texto.length;
-//    // Obtenemos referencia del div donde se va a alojar el texto.
-//    cnt = document.getElementById(contenedor);
-//    var i=0;
-//    // Creamos el timer
-//    timer = setInterval(function(){
-//       // Vamos añadiendo letra por letra y la _ al final.
-//       cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "_";
-//       // Si hemos llegado al final del texto..
-//       if(i >= longitud){
-//          // Salimos del Timer y quitamos la barra baja (_)
-//          clearInterval(timer);
-//          cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
-//          return true;
-//       } else {
-//          // En caso contrario.. seguimos
-//          i++;
-//       }
-//    },intervalo);
-// };
 
-   // var texto = "Desarrolladora Front-end, economista y estudiante de geomática, comprometida con los estudios y el trabajo, dispuesta a asumir retos y responsabilidades para convertirme en una “full-stack developer&quot;.";
-   // // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
-   // maquina("maquina",texto,50);
  $(function(){
   	$('.portfolio_item').mixItUp();
 });
+
+var desde=0,i=0,maximocaracteres=61,mensaje='Front-end, apasionada por el código y amante de la naturaleza. ';
+function mostrar() { 
+    var descr=document.getElementById('maquina').innerHTML; 
+    if(descr.length>maximocaracteres)desde++; 
+    if(i>=maximocaracteres)i=maximocaracteres; 
+    if(desde>=mensaje.length-maximocaracteres) { 
+        desde=0; 
+        i=0; 
+    }else{ 
+            i++; 
+    } 
+    document.getElementById('maquina').innerHTML =mensaje.substr(desde, i); 
+    if(mensaje.length<=maximocaracteres) 
+        document.getElementById('maquina').innerHTML =mensaje; 
+} 
+function inicio(){ 
+    setInterval('mostrar()',250); 
+} 
+window.onload=inicio; 
 
    
