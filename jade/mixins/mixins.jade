@@ -57,5 +57,19 @@ mixin habilidad(p,texto)
 			a(href="")
 				div(id="p")
 			p=texto
+mixin cualidad(name,texto)
+	.col-sm-2.col-xs-3.text-center
+		span.fa(class=name)
+		span=texto
 
+mixin portafolio(name,image,titulo,url)
+	.mix.category-1(class=name)
+		.ih-item.square.effect8.scale_up.colored
+			a(href="#")
+				.img
+					img(src="img/"+image+".png")
+				.info
+					h3=titulo
+					a(href=url)
+					span.fa.fa-arrow-right
 

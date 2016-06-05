@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Candal);
+@import url(https://fonts.googleapis.com/css?family=Milonga);
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
 *{
 	padding:0;
 	margin:0;
@@ -10,7 +10,11 @@
 	box-sizing: border-box;
 
 }
-
+.active{
+	background:black;
+	border:5px solid $bg-celeste;
+	color: white;
+}
 .w-100{
 	width: 100%;
 
@@ -39,7 +43,7 @@ a:hover{
 }
 .title{
 	color:$bg-celeste;
-	font-family: $Sigmar;
+	font-family: $titulo-font;
 	font-size: 3rem;
 	//padding-bottom: 30px;
 }

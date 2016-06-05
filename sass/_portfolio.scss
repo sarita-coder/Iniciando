@@ -14,12 +14,10 @@
 .navbar-brand{
 	padding:5px;
 	.logo{
-		height: 50px;
-		width: 50px;
+		height: 45px;
+		width: 45px;
 		display: inline-block;
     	background-size: 70%;
-    	margin-top: -5px;
-    	
     	background-repeat: no-repeat;
     	background-position: center;
     	border-radius: 0  100% 0  100% / 60%;
@@ -27,7 +25,6 @@
 }
 .logo-inver1{
 	background-image: url(../img/SARITA-IN.png);
-	box-shadow: 10px 15px 10px #3A6F77;
 	background-color: $text-white;
 }
 .inver1{
@@ -132,7 +129,7 @@
     justify-content: space-between;
     p{
 	 	animation-delay: 0.2s;
-	 	font-family: $titulo-font;
+		font-family:$titulo-font;
 	 	color: $bg-rosa;
 	 	font-size: 4rem;
     }
@@ -243,22 +240,45 @@
 
 // sobre mi
 .description{
-	p:nth-child(2){
-		padding: 20px 0;
+	margin: 20px 0 90px;
+	p{
+		margin:20px 0;
 		font-size: 20px;
-		color: $bg-celeste;
+		color: $black;
 		font-weight:500;
 	}
-	.foto{
-		margin-bottom:50px;
-		border-radius:50%;
-		width: 40%;
-		background-image:url("../img/sobre_mi2.jpg");
-		height: 300px;
-		background-size:cover;
-		background-position:60% 100%;
-		margin: auto;
+	.hola{
+		font-size: 40px;
+		color: $bg-celeste;
 	}
+	.cualidades{
+		text-align: center;
+		span:{
+			display: inline-block;
+			margin: 10px 10px;
+		}
+		span:first-child{
+			display: inline-block;
+			width: 70px;
+			height: 60px;
+			color: $bg-celeste;
+			font-size: 40px;
+		}
+		span:last-child{
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+	}
+	.foto{
+	    border-radius: 50%;
+	    width: 75%;
+	    background-image: url("../img/sobremi.png");
+	    height: 300px;
+    	background-size: 150%;
+    	background-position: 50% 0%;
+	    margin: auto;
+		}
 	.foto:hover{
 		opacity: 0.8;
 	}
@@ -332,6 +352,7 @@
 }
 
 .especialidad{
+	margin:20px 0 150px;
 	a{
 		span{
 			display: inline-block;
@@ -348,6 +369,7 @@
 	p:last-child{
 		font-size: 17px;
 		margin-bottom: 50px;
+		font-weight: bold;
 
 
 	}
@@ -382,18 +404,16 @@
 		}
 	}
 }
+
 .portfolio_item{
 	.mix{
 		img{
-			float:left;
-			width: 250px;
-			height: 180px;
-			//border: 2px solid $bg-celeste;
-		}
-		img:hover{
-			border: 2px solid $bg-celeste;
+			 height: 200px;
 		}
 	}
+}
+.info{
+	background:red;
 }
 
 /// contacto
@@ -410,41 +430,47 @@
 		color: white;
 	}
 }
-	.redes{
-		margin:auto;
-		margin-top: 50px;
-		width: 80%;
-		a{
-			display: inline-block;
-			width: 25px;
-			height: 25px;
-			color:white;
-			font-size: 60px;
-			margin: 35px;
-		}
-		a:hover{
-			text-decoration: none;
-			color:$bg-celeste;
-			
-		}
-	}
+.mail{
+	color: white;
+}
+.mail:hover{
+	color: $bg-celeste;
+	font-weight: bold;
+}
+
+.foto1{
+	    // border-radius: 50%;
+	    width: 100%;
+	    background-image: url("../img/sobremi.png");
+	    height: 300px;
+    	background-size: 150%;
+    	background-position: 50% 0%;
+	    margin: auto;
+}
+.foto1:hover{
+	opacity: 0.8;
+}
+.btn-enviar{
+	margin-top: 5px;
+	background: $bg-celeste;
+	color: white;
+	font-weight: bold;
+	font-size: 23px;
+	border: 1px solid $bg-celeste;
+}
+.btn-enviar:hover{
+	color: $bg-celeste;
+	background: white;
+	border: 1px solid white;
+	font-weight: bold;
+
+}
 //footer
 footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	//background: $bg-celeste;
-	color: $black;
+	background: black;
+	color: $bg-celeste;
+
 }
-.active{
-	background:white;
-	color:$bg-celeste;
-	border:1px solid $bg-celeste;
-}
-// .active{
-// 	background:white;
-// 	color:$bg-celeste;
-// 	border:1px solid $bg-celeste;
-// 	a{
-// 		color: $bg-celeste;
-// 	}
-// }
+

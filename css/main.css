@@ -6,8 +6,8 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Candal);
+@import url(https://fonts.googleapis.com/css?family=Milonga);
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5820,6 +5820,11 @@ button.close {
   font-size: 18px;
   box-sizing: border-box; }
 
+.active {
+  background: black;
+  border: 5px solid #F2385A;
+  color: white; }
+
 .w-100 {
   width: 100%; }
 
@@ -5843,7 +5848,7 @@ a:hover {
 
 .title {
   color: #F2385A;
-  font-family: "Montserrat";
+  font-family: "Lily Script One", cursive;
   font-size: 3rem; }
 
 .navbar-fixed-top {
@@ -5862,18 +5867,16 @@ a:hover {
 .navbar-brand {
   padding: 5px; }
   .navbar-brand .logo {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     display: inline-block;
     background-size: 70%;
-    margin-top: -5px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0  100% 0  100% / 60%; }
 
 .logo-inver1 {
   background-image: url(../img/SARITA-IN.png);
-  box-shadow: 10px 15px 10px #3A6F77;
   background-color: #fff; }
 
 .inver1 {
@@ -5969,7 +5972,7 @@ a:hover {
   justify-content: space-between; }
   .titulo p {
     animation-delay: 0.2s;
-    font-family: "Montserrat";
+    font-family: "Lily Script One", cursive;
     color: #F2385A;
     font-size: 4rem; }
 
@@ -6059,22 +6062,39 @@ a:hover {
   justify-content: center;
   align-items: center; }
 
-.description p:nth-child(2) {
-  padding: 20px 0;
-  font-size: 20px;
-  color: #F2385A;
-  font-weight: 500; }
-.description .foto {
-  margin-bottom: 50px;
-  border-radius: 50%;
-  width: 40%;
-  background-image: url("../img/sobre_mi2.jpg");
-  height: 300px;
-  background-size: cover;
-  background-position: 60% 100%;
-  margin: auto; }
-.description .foto:hover {
-  opacity: 0.8; }
+.description {
+  margin: 20px 0 90px; }
+  .description p {
+    margin: 20px 0;
+    font-size: 20px;
+    color: black;
+    font-weight: 500; }
+  .description .hola {
+    font-size: 40px;
+    color: #F2385A; }
+  .description .cualidades {
+    text-align: center;
+    span-display: inline-block;
+    span-margin: 10px 10px; }
+    .description .cualidades span:first-child {
+      display: inline-block;
+      width: 70px;
+      height: 60px;
+      color: #F2385A;
+      font-size: 40px; }
+    .description .cualidades span:last-child {
+      font-size: 15px;
+      font-weight: bold; }
+  .description .foto {
+    border-radius: 50%;
+    width: 75%;
+    background-image: url("../img/sobremi.png");
+    height: 300px;
+    background-size: 150%;
+    background-position: 50% 0%;
+    margin: auto; }
+  .description .foto:hover {
+    opacity: 0.8; }
 
 .lema {
   color: white;
@@ -6125,17 +6145,20 @@ a:hover {
   color: white;
   background: #F2385A; }
 
-.especialidad a span {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  font-size: 150px; }
-.especialidad p:nth-child(2) {
-  font-size: 20px;
-  color: #F2385A; }
-.especialidad p:last-child {
-  font-size: 17px;
-  margin-bottom: 50px; }
+.especialidad {
+  margin: 20px 0 150px; }
+  .especialidad a span {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    font-size: 150px; }
+  .especialidad p:nth-child(2) {
+    font-size: 20px;
+    color: #F2385A; }
+  .especialidad p:last-child {
+    font-size: 17px;
+    margin-bottom: 50px;
+    font-weight: bold; }
 
 .portfolio_item .mix {
   display: none; }
@@ -6159,11 +6182,10 @@ a:hover {
     font-weight: 700; }
 
 .portfolio_item .mix img {
-  float: left;
-  width: 250px;
-  height: 180px; }
-.portfolio_item .mix img:hover {
-  border: 2px solid #F2385A; }
+  height: 200px; }
+
+.info {
+  background: red; }
 
 #contacto {
   padding-top: 50px;
@@ -6177,30 +6199,43 @@ a:hover {
   #contacto .title {
     color: white; }
 
-.redes {
-  margin: auto;
-  margin-top: 50px;
-  width: 80%; }
-  .redes a {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    color: white;
-    font-size: 60px;
-    margin: 35px; }
-  .redes a:hover {
-    text-decoration: none;
-    color: #F2385A; }
+.mail {
+  color: white; }
+
+.mail:hover {
+  color: #F2385A;
+  font-weight: bold; }
+
+.foto1 {
+  width: 100%;
+  background-image: url("../img/sobremi.png");
+  height: 300px;
+  background-size: 150%;
+  background-position: 50% 0%;
+  margin: auto; }
+
+.foto1:hover {
+  opacity: 0.8; }
+
+.btn-enviar {
+  margin-top: 5px;
+  background: #F2385A;
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+  border: 1px solid #F2385A; }
+
+.btn-enviar:hover {
+  color: #F2385A;
+  background: white;
+  border: 1px solid white;
+  font-weight: bold; }
 
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #2C3E50; }
-
-.active {
-  background: white;
-  color: #F2385A;
-  border: 1px solid #F2385A; }
+  background: black;
+  color: #F2385A; }
 
 @media screen and (max-width: 700px) {
   .titulo p {
