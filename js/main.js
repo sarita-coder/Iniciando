@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function maquina(contenedor,texto,intervalo){
    // Calculamos la longitud del texto
    longitud = texto.length;
@@ -24,10 +25,32 @@ function maquina(contenedor,texto,intervalo){
 var texto = "Programando con pasión y espíritu verde";
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 
+=======
+>>>>>>> 44b9cd13e14d1c2e894f58979ebef998d6520565
 
  $(function(){
   	$('.portfolio_item').mixItUp();
   	maquina("maquina",texto,150);
 });
+
+var desde=0,i=0,maximocaracteres=61,mensaje='Front-end, apasionada por el código y amante de la naturaleza. ';
+function mostrar() { 
+    var descr=document.getElementById('maquina').innerHTML; 
+    if(descr.length>maximocaracteres)desde++; 
+    if(i>=maximocaracteres)i=maximocaracteres; 
+    if(desde>=mensaje.length-maximocaracteres) { 
+        desde=0; 
+        i=0; 
+    }else{ 
+            i++; 
+    } 
+    document.getElementById('maquina').innerHTML =mensaje.substr(desde, i); 
+    if(mensaje.length<=maximocaracteres) 
+        document.getElementById('maquina').innerHTML =mensaje; 
+} 
+function inicio(){ 
+    setInterval('mostrar()',250); 
+} 
+window.onload=inicio; 
 
    
