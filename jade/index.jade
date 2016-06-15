@@ -5,10 +5,9 @@ head
 	meta(charset="UTF-8")
 	title Sarita Coder
 	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
-	link(rel="shourtcut icon" href="img/SARITA-02.png" type="image/png")
+	link(rel="icon" type="image/png" href="img/SARITA-02.png" )
 	meta(name="viewport" content="width=device-width, initial-scale=1")
 	link(rel="stylesheet", href="css/animate.css")
-	link(rel="stylesheet", href="css/ihover.css")
 	link(rel="stylesheet", href="css/main.css")
 	
 body(data-spy="scroll" data-target=".navbar" data-offset="50")
@@ -83,7 +82,7 @@ body(data-spy="scroll" data-target=".navbar" data-offset="50")
 				.col-sm-5.text-center
 					.foto
 
-	.w-100#lema
+	.w-100#lemas
 		.container.lema.text-center
 			.w-100#maquina
 																		
@@ -106,13 +105,18 @@ body(data-spy="scroll" data-target=".navbar" data-offset="50")
 							li.filter(data-filter=".js") JS
 							li.filter(data-filter=".grupal") Grupal
 					.portfolio_item
-						+portafolio("jade sass","flat-theme-01","Flat Theme","http://sarita-coder.github.io/Love-Blog")
-						+portafolio("sass jade","future-imperfect","Future Imperfect","http://sarita-coder.github.io/future-imperfect")
-						+portafolio("jade grupal sass","republica","República","http://emilyvivancocuba.github.io/Examen-grupal-La-Republica")
-						+portafolio("css","whatsap","Whaptsap","http://sarita-coder.github.io/whassapt")
-						+portafolio("sass","triangle","Triangle","http://sarita-coder.github.io/triangle-free")
-						+portafolio("js","reloj_digital","Reloj Digital","http://sarita-coder.github.io/reloj-digital")
-						+portafolio("sass grupal","flat","Flat Theme","http://sazabache.github.io/Flat-theme")
+						+portafolio("http://sarita-coder.github.io/Dashy","https://github.com/sarita-coder/Dashy","css","dashboard","DashBoard",1)
+						+portafolio("http://sarita-coder.github.io/whassapt","https://github.com/sarita-coder/whassapt","css js","whatsap","Whaptsap",3)
+						+portafolio("http://dev.laboratoria.la/primes.sary/","https://github.com/saracoders/primes","sass grupal js","primes","Primes",1)
+						+portafolio("http://sarita-coder.github.io/Kane","https://github.com/sarita-coder/Kane","css","kene","Kane",1)
+						+portafolio("http://sazabache.github.io/Flat-theme","https://github.com/sazabache/Flat-theme","jade sass grupal","flat","Flat Theme",3)
+						+portafolio("http://sarita-coder.github.io/Love-Blog","https://github.com/sarita-coder/Love-Blog","jade sass","portfolio_1","Love Blog",2)
+						+portafolio("http://sarita-coder.github.io/blog-responsibe","https://github.com/sarita-coder/blog-responsibe","jade sass grupal","Blog-Responsive","Flatness",1)
+						+portafolio("http://sarita-coder.github.io/future-imperfect","https://github.com/sarita-coder/future-imperfect","sass jade","future-imperfect","Future Imperfect",3)
+						+portafolio("http://emilyvivancocuba.github.io/Examen-grupal-La-Republica","https://github.com/emilyvivancocuba/Examen-grupal-La-Republica","jade grupal sass","republica","República",3)
+						+portafolio("http://sarita-coder.github.io/triangle-free","https://github.com/sarita-coder/triangle-free","sass","triangle","Triangle",1)
+						+portafolio("http://sarita-coder.github.io/reloj-digital","https://github.com/sarita-coder/reloj-digital","js","reloj_digital","Reloj Digital",4)
+						+portafolio("http://sarita-coder.github.io/smash-faces","https://github.com/sarita-coder/smash-faces","css js","smach-face","Smach Face",4)
 
 
 	.w-100#lema
@@ -140,34 +144,21 @@ body(data-spy="scroll" data-target=".navbar" data-offset="50")
 						p Desarrollo de aplicaciones para la creación y administración de informácion espacial para mejorar la experiencia de navegabilidad del ususario para acceder a información y compartirla de manera efectiva.
 
 	.main#contacto
-		.container.text-center.contacto
+		.container.text-center.contacto.pd_100
 			.row
 				+title("Contactame")
 			.row
-				p 
-					a.mail(href="mailto:sarita.roman.colonio@gmail.com") sarita.roman.colonio@gmail.com
-				p
-					a.mail(href="") 991645498
 				.col-sm-4.col-sm-offset-1
 					.foto1
-				.col-sm-6
-					form
-						.form-group.text-left
-							label.w-100(for="exampleInputEmail1") Name
-								input(type="email" class="form-control" id="exampleInputEmail1" placeholder="Name")
-							label.w-100(for="exampleInputEmail1") Email
-								input(type="email" class="form-control" id="exampleInputEmail1" placeholder="Email")
-							textarea.form-control(rows="3") Hola, Tengo un proyecto y me gustaría que seas parte del equipo por que necesitamos personas comprometidas y creativas. 
+				.col-sm-4.col-sm-offset-1
+					.mensaje
+						p ¡Hola¡ 
+						p Gracias por visitar mi portafolio si te gusto y tienes un proyecto, contáctame lo heremos realidad, encantada de ser parte del equipo.
+						p 
+							a.mail(href="mailto:sarita.roman.colonio@gmail.com") sarita.roman.colonio@gmail.com
+						p
+							a.mail(href="") 991645498
 
-							button.btn-enviar.btn.btn-default(type="submit") Enviar
-
-
-
-
-
-					
-
-		
 	footer
 		.container.text-center
 			.row

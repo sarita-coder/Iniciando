@@ -10,6 +10,24 @@
 	box-sizing: border-box;
 
 }
+::selection {
+  color: white;
+  background: rgba(255, 68, 102, 0.63);
+}
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 6px 104px 66px black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #56D9CD;
+  outline: #ff4466;
+  border-left: 1px solid black;
+  border-radius: 50px;
+}
 .active{
 	background:black;
 	border:5px solid $bg-celeste;
@@ -30,6 +48,9 @@
 }
 hr{
 	margin:0;
+}
+.pd_100{
+	padding:50px 0;
 }
 
 a:hover{

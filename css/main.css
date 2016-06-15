@@ -5820,6 +5820,22 @@ button.close {
   font-size: 18px;
   box-sizing: border-box; }
 
+::selection {
+  color: white;
+  background: rgba(255, 68, 102, 0.63); }
+
+body::-webkit-scrollbar {
+  width: 0.8em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 6px 104px 66px black; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #56D9CD;
+  outline: #ff4466;
+  border-left: 1px solid black;
+  border-radius: 50px; }
+
 .active {
   background: black;
   border: 5px solid #F2385A;
@@ -5836,6 +5852,9 @@ button.close {
 
 hr {
   margin: 0; }
+
+.pd_100 {
+  padding: 50px 0; }
 
 a:hover {
   text-decoration: none; }
@@ -6019,7 +6038,7 @@ a:hover {
         background-size: cover;
         position: relative; }
         .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2 {
-          background-image: url("../img/portfolio_1.png");
+          background-image: url("../img/Blog-Responsive.png");
           position: absolute;
           background-size: cover;
           top: 0;
@@ -6031,7 +6050,7 @@ a:hover {
         .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2:before {
           content: "\2194";
           color: white;
-          font-size: 25px;
+          font-size: 35px;
           background: rgba(0, 0, 0, 0.7);
           height: 100%;
           position: absolute;
@@ -6108,11 +6127,20 @@ a:hover {
   height: 200px;
   font-size: 15px; }
 
+#lemas {
+  background-image: url("../img/profesiones_futuro.jpg"); }
+
 #lema {
   background-color: #56D9CD; }
-  #lema .container #maquina {
+
+#lema, #lemas {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  #lema .container #maquina, #lemas .container #maquina {
     font-size: 35px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #F2385A; }
 
 .about_text h1 {
   font-family: 'Candal';
@@ -6153,6 +6181,8 @@ a:hover {
     width: 150px;
     height: 150px;
     font-size: 150px; }
+  .especialidad a:hover {
+    color: #F2385A; }
   .especialidad p:nth-child(2) {
     font-size: 20px;
     color: #F2385A; }
@@ -6182,15 +6212,62 @@ a:hover {
     color: #000;
     font-weight: 700; }
 
-.portfolio_item .mix img {
-  height: 200px; }
+.portfolio_item .mix {
+  -webkit-perspective: 700; }
+  .portfolio_item .mix .carta {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 3s;
+    box-shadow: 0px 0px 5px black; }
+  .portfolio_item .mix .carta:hover {
+    transform: rotateY(180deg); }
+  .portfolio_item .mix .lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute; }
+  .portfolio_item .mix .frente {
+    border-radius: 5px; }
+  .portfolio_item .mix .atras {
+    background: #fff;
+    transform: rotateY(180deg); }
+    .portfolio_item .mix .atras h4 {
+      margin-top: 0;
+      background: #F2385A;
+      color: white;
+      padding: 10px 0; }
+    .portfolio_item .mix .atras p {
+      font-size: 16px;
+      margin: 0;
+      color: black;
+      font-weight: bold; }
+    .portfolio_item .mix .atras .texto {
+      padding-left: 25px; }
+    .portfolio_item .mix .atras a {
+      text-align: center;
+      background: #F2385A;
+      display: inline-block;
+      width: 120px;
+      font-size: 16px;
+      margin: 5px;
+      color: white;
+      border-radius: 8px; }
+      .portfolio_item .mix .atras a .fa {
+        color: white;
+        margin-left: 5px; }
+    .portfolio_item .mix .atras a:hover {
+      background: #31d0c1; }
+  .portfolio_item .mix img {
+    width: 100%;
+    height: 100%; }
 
 .info {
   background: red; }
 
 #contacto {
   padding-top: 50px;
-  height: 560px;
   background: #F5A503;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -6201,10 +6278,11 @@ a:hover {
     color: white; }
 
 .mail {
-  color: white; }
+  color: #F2385A;
+  font-weight: bold; }
 
 .mail:hover {
-  color: #F2385A;
+  color: white;
   font-weight: bold; }
 
 .foto1 {
@@ -6238,6 +6316,13 @@ footer {
   background: black;
   color: #F2385A; }
 
+.mensaje {
+  margin-top: 20px; }
+  .mensaje p {
+    font-size: 20px; }
+  .mensaje p:first-child {
+    font-size: 24px; }
+
 @media screen and (max-width: 700px) {
   .titulo p {
     animation-delay: 0.2s;
@@ -6266,7 +6351,7 @@ footer {
             top: 0;
             left: 0;
             height: 100%;
-            max-width: 100%;
+            width: 110px;
             resize: horizontal;
             overflow: hidden; }
           .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2:before {

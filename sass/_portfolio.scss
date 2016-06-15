@@ -188,7 +188,7 @@
 	    		background-size:cover;
 	    		position:relative;
 	    		.imagen2{
-	    			background-image:url('../img/portfolio_1.png');
+	    			background-image:url('../img/Blog-Responsive.png');
 	    			position:absolute;
 	    			background-size:cover;
 	    			top:0;
@@ -201,7 +201,7 @@
 		    	.imagen2:before{
 					content:"\2194";
 					color:white;
-					font-size: 25px;
+					font-size: 35px;
 					background:rgba(0,0,0,0.7);
 					height: 100%;
 					position:absolute;
@@ -287,6 +287,7 @@
 
 ///lema
 .lema{
+	//color: $bg-celeste;
 	color: white;
 	-ms-display: flex;
   	display: flex;
@@ -296,13 +297,24 @@
   	justify-content: center;
   	height: 200px;
   	font-size: $font-15;
+
 }
+#lemas{
+	background-image: url("../img/profesiones_futuro.jpg");
+}
+
 #lema{
 	background-color: #56D9CD;
+}
+#lema, #lemas{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	.container{
 		#maquina{
 		font-size: 35px;
 		font-weight:500;
+		color: $bg-celeste;
 		}
 	}
 }
@@ -363,6 +375,9 @@
 
 		}
 	}
+	a:hover{
+		color: $bg-celeste;
+	}
 	p:nth-child(2){
 		font-size: 20px;
 		color: $bg-celeste;
@@ -408,8 +423,68 @@
 
 .portfolio_item{
 	.mix{
+		-webkit-perspective:700;
+		.carta{
+			width: 300px;
+			height: 200px;
+			position: relative;
+			transform-style:preserve-3d;
+			transition:3s;
+			box-shadow: 0px 0px 5px black;
+		}
+		.carta:hover{
+			transform:rotateY(180deg);
+		}
+		.lado{
+			width: 100%;
+			height: 100%;
+			backface-visibility:hidden;
+			position: absolute;
+		}
+		.frente{
+			border-radius: 5px;
+		}
+		.atras{
+			background: #fff;
+			transform: rotateY(180deg);
+			h4{
+				margin-top: 0;
+				background: $bg-celeste;
+				color: white;
+				padding: 10px 0;
+			}
+			p{
+				font-size: 16px;
+				margin:0;
+				color: black;
+				font-weight: bold;
+			}
+			.texto{
+				padding-left: 25px;
+			}
+			a{
+				text-align: center;
+				background: $bg-celeste;
+				display:inline-block;
+				width: 120px;
+				font-size: 16px;
+				margin:5px;
+				color: white;
+				border-radius: 8px;
+				.fa{
+					color: white;
+					margin-left: 5px;
+				}
+			}
+			a:hover{
+				background: #31d0c1;
+
+				
+			}
+		}
 		img{
-			 height: 200px;
+			width: 100%;
+			height: 100%;
 		}
 	}
 }
@@ -420,7 +495,7 @@
 /// contacto
 #contacto{
 	padding-top: 50px;
-	height: 560px;
+	//height: 560px;
 	background: #F5A503;
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
@@ -432,10 +507,11 @@
 	}
 }
 .mail{
-	color: white;
+	color: $bg-celeste;
+	font-weight: bold;
 }
 .mail:hover{
-	color: $bg-celeste;
+	color: white;
 	font-weight: bold;
 }
 
@@ -475,3 +551,12 @@ footer{
 
 }
 
+.mensaje{
+	margin-top: 20px;
+	p{
+		font-size: 20px;
+	}
+	p:first-child{
+		font-size: 24px;
+	}
+}
