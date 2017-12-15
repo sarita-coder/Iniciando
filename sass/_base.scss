@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Candal);
+@import url(https://fonts.googleapis.com/css?family=Milonga);
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
 *{
 	padding:0;
 	margin:0;
@@ -10,7 +10,29 @@
 	box-sizing: border-box;
 
 }
+::selection {
+  color: white;
+  background: rgba(255, 68, 102, 0.63);
+}
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 6px 104px 66px black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #56D9CD;
+  outline: #ff4466;
+  border-left: 1px solid black;
+  border-radius: 50px;
+}
+.active{
+	background:black;
+	border:5px solid $bg-celeste;
+	color: white;
+}
 .w-100{
 	width: 100%;
 
@@ -27,6 +49,9 @@
 hr{
 	margin:0;
 }
+.pd_100{
+	padding:50px 0;
+}
 
 a:hover{
 	text-decoration: none;
@@ -36,4 +61,10 @@ a:hover{
 }
 .pb-50{
 	margin-bottom: 50px;
+}
+.title{
+	color:$bg-celeste;
+	font-family: $titulo-font;
+	font-size: 3rem;
+	//padding-bottom: 30px;
 }

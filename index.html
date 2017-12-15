@@ -2,12 +2,17 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8"/>
-  <title>Sarita Coder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mi Portafolio Web</title>
+  <meta name="Keywords" content="Portafolio Web, Front-end, Laboratoria, sarita-coder"/>
+  <meta name="Description" content="Portafolio Web, Front-end, Laboratoria, sarita-coder"/>
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+  <link rel="icon" type="image/png" href="img/SARITA-02.png"/>
+
   <link rel="stylesheet" href="css/animate.css"/>
   <link rel="stylesheet" href="css/main.css"/>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Fixed navbar-->
   <div id="menu" role="navigation" class="navbar navbar-fixed-top nav-transp">
     <div class="container padd">
@@ -16,7 +21,8 @@
       </div>
       <div id="collapse" class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#Sobremi" class="link1 link-header">Sobre mí</a></li>
+          <li class="active hidden"><a href=""></a></li>
+          <li><a href="#Sobremi" class="link1 link-header">Sobre mí</a></li>
           <li><a href="#portafolio" class="link2 link-header">Portafolio</a></li>
           <li><a href="#habilidades" class="link3 link-header">Habilidades</a></li>
           <li><a href="#contacto" class="link4 link-header">Contacto</a></li>
@@ -29,8 +35,8 @@
     <div class="opacity">
       <div class="banner">
         <div class="titulo">
-          <p class="text-you animated fadeInDown">Lo que tú ves</p>
-          <p class="text-i animated fadeInDown">Lo que hago</p>
+          <p class="text-you animated fadeInLeft">Lo que tú ves</p>
+          <p class="text-i animated fadeInRight">Lo que yo hago</p>
         </div>
         <div class="marco-pantalla">
           <div class="cont-pantalla">
@@ -58,10 +64,6 @@
       <!--li
       a(href="" target="_blank") Contactame
       
-      
-      
-      
-      
       -->
     </ul>
   </div>
@@ -73,17 +75,27 @@
         </div>
       </div>
       <div class="row description">
-        <div class="col-sm-5 col-sm-offset-1">
-          <p>Sarita Román Colonio </p>
-          <p>Front-end, apasionada por el código, busco desarrollarme en el mundo tecnológico por que desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar, como tambien amar a Google, se ha convertido en mi compañero de día y con el descubri que podemos programar un mundo diferente. Fueron 5 meses que permitieron conocer el poder que llevamos dentro y más aun cuando trabajamos en grupo. Otra cosa que me enamora es la naturaleza sobre todo las cataratas.</p>
+        <div class="col-sm-5 col-sm-offset-1 text-center">
+          <p class="hola text-left">¡Hola!</p>
+          <p>Mi nombre es Sarita, soy desarrolladora front-end mi pasión por el mundo digital se ha inclinado por la programación y desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar. Me encanta lo que hago y disfruto mucho trabajando en equipo.</p>
+          <div class="cualidades">
+            <div class="row text-center">
+              <div class="col-sm-3 col-xs-3 text-center"><span class="fa fa-thumbs-o-up"></span><span>Fuerza</span></div>
+              <div class="col-sm-3 col-xs-3 text-center"><span class="fa fa-lightbulb-o"></span><span>Inteligente</span></div>
+              <div class="col-sm-3 col-xs-3 text-center"><span class="fa fa-users"></span><span>Equipo</span></div>
+              <div class="col-sm-3 col-xs-3 text-center"><span class="fa fa-laptop"></span><span>Compañero</span></div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-5"><img src="img/sobremi.png" class="foto w-100"/></div>
+        <div class="col-sm-5 text-center">
+          <div class="foto"></div>
+        </div>
       </div>
     </div>
   </div>
-  <div id="lema" class="w-100">
+  <div id="lemas" class="w-100">
     <div class="container lema text-center">
-      <h2>"Programando con pasión y espíritu verde"</h2>
+      <div id="maquina" class="w-100"></div>
     </div>
   </div>
   <div id="portafolio" class="main our_woks_area section-padding">
@@ -94,15 +106,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-2 col-sm-offset-1 col-xs-2">
-          <div class="about_text text-left">
-            <h1>M<span>ís </span></h1>
-            <h1><span>proyectos </span></h1>
-          </div>
-        </div>
-        <div class="col-sm-8 col-xs-10">
-          <div class="about_p">
-            <p>Trabajos que realize y del que forme parte de proyectos en equipo con tiempos de entrega especiales me han permitido aprender y seguir evolucionando en cada proyecto.</p>
+        <div class="col-sm-12">
+          <div class="about_p text-center">
+            <p>Aquí algunos de los trabajos realizados por tipo de tecnología. </p>
           </div>
         </div>
       </div>
@@ -119,14 +125,174 @@
             </ul>
           </div>
           <div class="portfolio_item">
-            <div class="mix category-1 css"><a href="http://sarita-coder.github.io/whassapt"><img src="img/whatsap.png"/></a></div>
-            <div class="mix category-1 jade"><a href=""><img src="img/future-imperfect.png"/></a></div>
-            <div class="mix category-2 js"><a href=""><img src="img/flatness.png"/></a></div>
-            <div class="mix category-1 grupal"><a href=""><img src="img/flat.png"/></a></div>
-            <div class="mix category-1 grupal"><a href=""><img src="img/republica.png"/></a></div>
-            <div class="mix category-2 sass"><a href=""><img src="img/portfolio_1.png"/></a></div>
-            <div class="mix category-2 sass"><a href=""><img src="img/triangle.png"/></a></div>
-            <div class="mix category-2 js"><a href=""><img src="img/reloj_digital.png"/></a></div>
+            <div class="mix category-1 css">
+              <div class="carta">
+                <div class="lado frente"><img src="img/dashboard.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>DashBoard</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css </p>
+                    <p>Html5</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/Dashy" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/Dashy" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 css js">
+              <div class="carta">
+                <div class="lado frente"><img src="img/whatsap.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Whaptsap</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Sass</p>
+                    <p>Jade</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/whassapt" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/whassapt" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 sass grupal js">
+              <div class="carta">
+                <div class="lado frente"><img src="img/primes.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Primes</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css </p>
+                    <p>Html5</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/saracoders/primes" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://dev.laboratoria.la/primes.sary/" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 css">
+              <div class="carta">
+                <div class="lado frente"><img src="img/kene.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Kane</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css </p>
+                    <p>Html5</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/Kane" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/Kane" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 jade sass grupal">
+              <div class="carta">
+                <div class="lado frente"><img src="img/flat.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Flat Theme</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Sass</p>
+                    <p>Jade</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sazabache/Flat-theme" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sazabache.github.io/Flat-theme" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 jade sass">
+              <div class="carta">
+                <div class="lado frente"><img src="img/portfolio_1.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Love Blog</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <P>Html5</P>
+                    <p>Sass </p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/Love-Blog" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/Love-Blog" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 jade sass grupal">
+              <div class="carta">
+                <div class="lado frente"><img src="img/Blog-Responsive.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Flatness</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css </p>
+                    <p>Html5</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/blog-responsibe" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/blog-responsibe" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 sass jade">
+              <div class="carta">
+                <div class="lado frente"><img src="img/future-imperfect.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Future Imperfect</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Sass</p>
+                    <p>Jade</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/future-imperfect" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/future-imperfect" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 jade grupal sass">
+              <div class="carta">
+                <div class="lado frente"><img src="img/republica.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>República</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Sass</p>
+                    <p>Jade</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/emilyvivancocuba/Examen-grupal-La-Republica" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://emilyvivancocuba.github.io/Examen-grupal-La-Republica" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 sass">
+              <div class="carta">
+                <div class="lado frente"><img src="img/triangle.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Triangle</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css </p>
+                    <p>Html5</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/triangle-free" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/triangle-free" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 js">
+              <div class="carta">
+                <div class="lado frente"><img src="img/reloj_digital.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Reloj Digital</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css</p>
+                    <p>Js</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/reloj-digital" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/reloj-digital" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="mix category-1 css js">
+              <div class="carta">
+                <div class="lado frente"><img src="img/smach-face.png" class="w-100"/></div>
+                <div class="lado atras">
+                  <h4>Smach Face</h4>
+                  <div class="texto text-left">
+                    <p>Tecnologías usadas:</p>
+                    <p>Css</p>
+                    <p>Js</p>
+                    <p>Bootstrap</p>
+                  </div><a href="https://github.com/sarita-coder/smash-faces" target="_blank">Ver código<span class="fa fa-github"></span></a><a href="http://sarita-coder.github.io/smash-faces" target="_blank">Visitar página<span class="fa fa-arrow-right"></span></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -134,7 +300,7 @@
   </div>
   <div id="lema" class="w-100">
     <div class="container lema text-center">
-      <h2>"Programando con pasión y espíritu verde"</h2>
+      <h2>Front-end, apasionada por el código y amante de la naturaleza.</h2>
     </div>
   </div>
   <div id="habilidades" class="main">
@@ -145,38 +311,39 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-4 col-xs-12 col-sm-offset-2">
           <div class="especialidad"><a href=""><span class="fa fa-code"></span></a>
             <p>Desarrolladora Web</p>
-            <p>Maquetación de páginas web responsive con diferentes tecnologías: Html, Css, Sass, Jade, Js, Jquery, Worpress, Base de datos.</p>
+            <p>Maquetación de páginas web responsive con diferentes tecnologías: Html, Css, Sass, Jade, Js, Jquery, Worpress. Con nociones en Modelo Vista Controlador con Java, Base de datos con Sql, Postgres y MySql.</p>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
           <div class="especialidad"><a href=""><span class="fa fa-globe"></span></a>
             <p>Geomática</p>
-            <p>Desarrolo de aplicaciones para la creación y administración de informácion espacial para mejorar la habilidad del ususario para acceder a información y compartirla de manera más efectiva.</p>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="especialidad"><a href=""><span class="fa fa-check-circle-o"></span></a>
-            <p>Economía</p>
-            <p> </p>
+            <p>Desarrollo de aplicaciones para la creación y administración de informácion espacial para mejorar la experiencia de navegabilidad del ususario para acceder a información y compartirla de manera efectiva.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div id="contacto" class="main">
-    <div class="container text-center contacto">
+    <div class="container text-center contacto pd_100">
       <div class="row">
         <div class="title">
-          <h1>Contactame</h1>
+          <h1>Contáctame</h1>
         </div>
       </div>
       <div class="row">
-        <div class="redes"><a href="https://github.com/sarita-coder" class="fa fa-github"></a><a href="https://plus.google.com/u/0/103995783096870228612/about" class="fa fa-google-plus-square"></a><a href="https://www.facebook.com/edised.roman" class="fa fa-facebook"></a><a href="https://www.linkedin.com/in/saritacoder" class="fa fa-linkedin-square"></a></div>
-        <div class="correo">
-          <p>sarita.roman.colonio@gmail.com</p>
+        <div class="col-sm-4 col-sm-offset-1">
+          <div class="foto1"></div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1">
+          <div class="mensaje">
+            <p>¡Hola¡ </p>
+            <p>Gracias por visitar mi portafolio si te gusto y tienes un proyecto, contáctame lo heremos realidad, encantada de ser parte del equipo.</p>
+            <p> <a href="mailto:sarita.roman.colonio@gmail.com" class="mail">sarita.roman.colonio@gmail.com</a></p>
+            <p><a href="" class="mail">991645498</a></p>
+          </div>
         </div>
       </div>
     </div>

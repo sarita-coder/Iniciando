@@ -1,6 +1,9 @@
 .navbar-fixed-top{
 	background:$bg-color;
 }
+.nav-transp {
+	background: transparent;
+}
 .header{
 	background:$bg-celeste;
 	color:$text-white;
@@ -11,32 +14,22 @@
 .navbar-brand{
 	padding:5px;
 	.logo{
-		height: 50px;
-		width: 50px;
+		height: 45px;
+		width: 45px;
 		display: inline-block;
     	background-size: 70%;
-    	margin-top: -5px;
-    	
     	background-repeat: no-repeat;
     	background-position: center;
     	border-radius: 0  100% 0  100% / 60%;
-    		}
-}
-#contendor{
-	img{
-		width: 50%;
-	}
+    	}
 }
 .logo-inver1{
 	background-image: url(../img/SARITA-IN.png);
-	box-shadow: 10px 15px 10px #3A6F77;
 	background-color: $text-white;
-
 }
 .inver1{
 	color: $bg-celeste;
 }
-
 .nav {
 	li{
 		.link-header{
@@ -49,19 +42,22 @@
 	 	color: $bg-celeste;
 		background: white;
 	 	}
+
 	 }
+		 	.active{
+			color: $bg-celeste;
+	 	}
 }
 .logo-inver{
 	background-image: url(../img/SARITA-02.png);
 	background-color: #fff;
-	//box-shadow: 10px 15px 10px  $bg-celeste;
 }
 .navbar-nav{
 	transform: translateX(0%);
 	transition: all 0.8s ease-in-out;
 }
 .navbar-toggle{
-	margin-top: 18px;
+	margin-top: 10px;
 	margin-bottom: -16px;
 }
 .navbar-toggle:hover {
@@ -117,12 +113,6 @@
 	margin: 0 0 5px;
 }
 /// primer
-.Hero{
-	//background-image: url('../img/contacto1.jpg');
-	background-attachment: fixed;
-	
-	background-size: cover;
-}
 .opacity{
 	background: #56D9CD;
 	height: 100vh;
@@ -134,35 +124,22 @@
   	justify-content: center;
 
 }
-.nav-transp {
-	background: transparent;
-}
-////titulos
-.title{
-	color:$bg-celeste;
-	font-family: $Sigmar;
-	font-size: 3rem;
-	padding-bottom: 30px;
-}
 .titulo{
 	display: flex;
     justify-content: space-between;
     p{
 	 	animation-delay: 0.2s;
-	 	font-family: $titulo-font;
+		font-family:$titulo-font;
 	 	color: $bg-rosa;
 	 	font-size: 4rem;
     }
-
 }
 //contacme
-.contactame{
+.contactame {
 	position: fixed;
 	left: 0;
 	top:200px;
 	z-index: 2000;
-}
-.contactame {
 	ul {
 		list-style: none;
 		li{
@@ -192,7 +169,6 @@
 			.fa-linkedin{
 				background: #1060A6;
 			}
-
 		} 
 	}
 }
@@ -204,10 +180,10 @@
 		border-radius:15px;
     	width: 100%;
     	.cont-pantalla{
-			height: 400px;
+			height: 300px;
 	    	.imagen1{
 	    		width: 100%;
-	    		height: 400px;
+	    		height: 300px;
 	    		background-image:url('../img/hero5.jpg');
 	    		background-size:cover;
 	    		position:relative;
@@ -225,39 +201,34 @@
 		    	.imagen2:before{
 					content:"\2194";
 					color:white;
-					font-size: 25px;
+					font-size: 35px;
 					background:rgba(0,0,0,0.7);
 					height: 100%;
 					position:absolute;
-					line-height: 400px;
+					line-height: 300px;
 					right: 0;
 					top:0;
 	    		}
 	    		textarea{
 					opacity: 0;
-					width: 20px;
+					min-width:70%;
 					height: 10px;
 					position:relative;
 					top:50%;
 					transform:scaleY(40);
 	    			cursor:e-resize;
 	    		}
-    		}
-	    		
-    		
+    		}		
     	}
-
     }
-
 }
-	.teclado{
-		height: 0;
-		border-top:none;
-		border-bottom:none;
-		border-bottom:25px solid $bg-border;
-		border-radius:10px;
-	}
-
+.teclado{
+	height: 0;
+	border-top:none;
+	border-bottom:none;
+	border-bottom:25px solid $bg-border;
+	border-radius:10px;
+}
 .global{
 	margin-top: 150px;
 	background:linear-gradient(#eee 50%,#333 50%);
@@ -266,73 +237,57 @@
 	justify-content:center;
 	align-items:center;
 }
-#toggle{
-	display:none;
-}
-#botton{
-	display:block;
-	width:200px;
-	height:200px;
-	background:#fff;
-	line-height:200px;
-	text-align:center;
-	font-size:70px;
-	border-radius:50%;
-	color:#777;
-	cursor:pointer;
-	box-shadow:0 12px 30px rgba(0,0,0,0.7);
-	margin:auto;
-}
-#toggle:checked + #botton{
-	background: #eee;
-	box-shadow:inset 0 12px  35px rgba(0,0,0,0.5);
-	color: rgba(0,255,0,0.7);
-}
-.contenedor{
-	width:100%;
-}
-.luces{
-	display:flex;
-	margin-top:50px;
-	border-top:1x solid #fff;
-	justify-content:center;
-	img{
-		display: block;
-		margin: auto;
+
+// sobre mi
+.description{
+	margin: 20px 0 90px;
+	p{
+		margin:20px 0;
+		font-size: 20px;
+		color: $black;
+		font-weight:500;
+	}
+	.hola{
+		font-size: 40px;
+		color: $bg-celeste;
+	}
+	.cualidades{
+		text-align: center;
+		span:{
+			display: inline-block;
+			margin: 10px 10px;
+		}
+		span:first-child{
+			display: inline-block;
+			width: 70px;
+			height: 60px;
+			color: $bg-celeste;
+			font-size: 40px;
+		}
+		span:last-child{
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+	}
+	.foto{
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		display: inline-block;
+		background-image:url("../img/sobre_mi2.jpg"); 
+    	background-size: 150%;
+    	background-position: 50% 0%;
+	    margin: auto;
+		}
+	.foto:hover{
+		opacity: 0.8;
 	}
 }
 
-.col-2{
-	display:inline-block;
-	width:45%;
-	border-left: 55px solid transparent
-}
-.row .col-2:nth-child(2){
-	background:$bg-celeste;
-	border-: 13px solid #fff;
-	 -ms-transform-origin:100% 100%; 
-	 -o-transform-origin:100% 100%
-}
-// sobre mi
-.description{
-	p{
-		//text-align: justify;
-	}
-	p:first-child{
-		padding: 50px 0;
-		font-size: 20px;
-		color: $bg-celeste;
-		font-weight: 300;
-	}
-	p:last-child{
-		//padding-bottom: 200px;
-	}
-	.foto{
-		margin-top: 100px;
-	}
-}
 ///lema
 .lema{
+	//color: $bg-celeste;
 	color: white;
 	-ms-display: flex;
   	display: flex;
@@ -342,12 +297,26 @@
   	justify-content: center;
   	height: 200px;
   	font-size: $font-15;
-  	h2{
-  		margin: 0;
-  	}	
+
 }
+#lemas{
+	background-image: url("../img/profesiones_futuro.jpg");
+}
+
 #lema{
 	background-color: #56D9CD;
+}
+#lema, #lemas{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	.container{
+		#maquina{
+		font-size: 35px;
+		font-weight:500;
+		color: $bg-celeste;
+		}
+	}
 }
 .about_text{
 	h1{
@@ -363,16 +332,9 @@
 			
 		}
 	}
-	h1:last-child{
-		color: $bg-celeste;
-		span{
-			font-size:20px;
-			font-weight: bold;
-		}
-	}
 }
 .about_p{
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 .col-foto{
@@ -402,55 +364,8 @@
 	}
 }
 
-//portafolio
-.hero1{
-	height:500px;
-}
-.col-sm-6{
-	.portafolio{
-		position: relative;
-		height: 230px;
-		margin-bottom: 30px;
-		.slider{
-			//@include portfolio(slider,'../img/triangle.png','../img/flat.png','../img/flatness.png')
-			width: 100%;
-			height: 230px;
-			border: 3px solid $bg-celeste;
-			margin:auto;
-			//background-image:url('../img/triangle.png');
-			background-size:100% 100%;
-			animation: banner2 15s infinite;
-			animation-direction:alternate;
- 			@keyframes banner2{
- 				0%,30%{
- 					background-image:url('../img/triangle.png');
- 					opacity:1;
- 				}
- 				31%,34%{
- 					opacity:0.1;
- 				}
- 				35%,65%{
- 					opacity:1;
- 					background-image:url('../img/flat.png');
- 				}
- 				66%,69%{
- 					opacity:0.1;
- 				}
- 				70%, 100%{
- 					opacity:1;
- 					background-image:url('../img/flatness.png');
- 				}
- 			}
-		}
-	}
-}
-.field1, .field2{
-	margin-bottom: 20px;
-}
-// habilidades
-
-
 .especialidad{
+	margin:20px 0 150px;
 	a{
 		span{
 			display: inline-block;
@@ -460,6 +375,9 @@
 
 		}
 	}
+	a:hover{
+		color: $bg-celeste;
+	}
 	p:nth-child(2){
 		font-size: 20px;
 		color: $bg-celeste;
@@ -467,134 +385,16 @@
 	p:last-child{
 		font-size: 17px;
 		margin-bottom: 50px;
+		font-weight: bold;
 
 
 	}
 
 }
 
-//
-.cont-habi{
-	height: 170px;
-	width: 100%;
-	position: relative;
-	margin-top:20px;
-	.cuello{
-		position: absolute;
-		right: 50%;
-		margin-right: -30px;
-		width: 60px;
-		height: 10px;
-		border-radius: 5px;
-		border: 2px solid $ensayo;
-	}
-	.tubo{
-		@include conten();
-	}
-	.id1:before{
-		animation: id1 15s infinite;
-		@include before(red);
-	}
-	@keyframes id1{
-		50%{
-			height: 50px;
-		}
-		100%{
-			height: 100px;
-		}
-	}
-	.id2:before{
-		animation: id2 15s infinite;
-		@include before(green);
-	}
-	@keyframes id2{
-		50%{
-			height: 40px;
-		}
-		100%{
-			height: 90px;
-		}
-	}
-	.id3:before{
-		animation: id3 15s infinite;
-		@include before(yellow);
-	}
-	@keyframes id3{
-		50%{
-			height: 20px;
-		}
-		100%{
-			height: 40px;
-		}
-	}
-	.id4:before{
-		animation: id4 15s infinite;
-		@include before(violet);
-	}
-	@keyframes id4{
-		50%{
-			height: 30px;
-		}
-		100%{
-			height: 60px;
-		}
-	}
-	.id5:before{
-		animation: id5 15s infinite;
-		@include before(pink);
-	}
-	@keyframes id5{
-		50%{
-			height: 45px;
-		}
-		100%{
-			height: 90px;
-		}
-	}	
-	.id6:before{
-		animation: id6 15s infinite;
-		@include before(rgba(241, 18, 129, 0.73));
-	}
-	@keyframes id6{
-		50%{
-			height: 45px;
-		}
-		100%{
-			height: 90px;
-		}
-	}
-	.id7:before{
-		animation: id7 15s infinite;
-		@include before(skyblue);
-	}
-	@keyframes id7{
-		50%{
-			height: 10px;
-		}
-		100%{
-			height: 20px;
-		}
-	}
-	.id8:before{
-		animation: id8 15s infinite;
-		@include before(blue);
-	}
-	@keyframes id8{
-		0%{
-			height: 0px;
-		}
-		100%{
-			height: 60px;
-		}
-	}
-}
 ///
 .portfolio_item .mix{
 	display: none;
-}
-.portfolio_filter{
-
-
 }
 .portfolio-filter{
 	 ul{
@@ -603,13 +403,12 @@
 		list-style: none;
 		li{
 			border: 3px solid #F1F2F7;
-			color: #000;
+			//color: #000;
 			display: inline-block;
 			margin-top: 10px;
 			margin-bottom: 50px;
 			padding: 8px 22px;
 			cursor: pointer;
-
 		}
 		li:hover{
 			border:3px solid $bg-celeste;
@@ -621,24 +420,82 @@
 		}
 	}
 }
+
 .portfolio_item{
 	.mix{
-		img{
-			float:left;
-			width: 200px;
-			height: 120px;
-			//border: 2px solid $bg-celeste;
+		-webkit-perspective:700;
+		.carta{
+			width: 300px;
+			height: 200px;
+			position: relative;
+			transform-style:preserve-3d;
+			transition:3s;
+			box-shadow: 0px 0px 5px black;
 		}
-		img:hover{
-			border: 2px solid $bg-celeste;
+		.carta:hover{
+			transform:rotateY(180deg);
+		}
+		.lado{
+			width: 100%;
+			height: 100%;
+			backface-visibility:hidden;
+			position: absolute;
+		}
+		.frente{
+			border-radius: 5px;
+		}
+		.atras{
+			background: #fff;
+			transform: rotateY(180deg);
+			h4{
+				margin-top: 0;
+				background: $bg-celeste;
+				color: white;
+				padding: 10px 0;
+			}
+			p{
+				font-size: 16px;
+				margin:0;
+				color: black;
+				font-weight: bold;
+			}
+			.texto{
+				padding-left: 25px;
+			}
+			a{
+				text-align: center;
+				background: $bg-celeste;
+				display:inline-block;
+				width: 120px;
+				font-size: 16px;
+				margin:5px;
+				color: white;
+				border-radius: 8px;
+				.fa{
+					color: white;
+					margin-left: 5px;
+				}
+			}
+			a:hover{
+				background: #31d0c1;
+
+				
+			}
+		}
+		img{
+			width: 100%;
+			height: 100%;
 		}
 	}
+}
+.info{
+	background:red;
 }
 
 /// contacto
 #contacto{
 	padding-top: 50px;
-	height: 560px;
+	//height: 560px;
 	background: #F5A503;
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
@@ -649,28 +506,57 @@
 		color: white;
 	}
 }
-	.redes{
-		margin:auto;
-		margin-top: 50px;
-		width: 80%;
-		a{
-			display: inline-block;
-			width: 25px;
-			height: 25px;
-			color:white;
-			font-size: 60px;
-			margin: 35px;
-		}
-		a:hover{
-			text-decoration: none;
-			color:$bg-celeste;
-			
-		}
-	}
+.mail{
+	color: $bg-celeste;
+	font-weight: bold;
+}
+.mail:hover{
+	color: white;
+	font-weight: bold;
+}
+
+.foto1{
+	    // border-radius: 50%;
+	    width: 100%;
+	    background-image: url("../img/sobremi.png");
+	    height: 300px;
+    	background-size: 150%;
+    	background-position: 50% 0%;
+	    margin: auto;
+}
+.foto1:hover{
+	opacity: 0.8;
+}
+.btn-enviar{
+	margin-top: 5px;
+	background: $bg-celeste;
+	color: white;
+	font-weight: bold;
+	font-size: 23px;
+	border: 1px solid $bg-celeste;
+}
+.btn-enviar:hover{
+	color: $bg-celeste;
+	background: white;
+	border: 1px solid white;
+	font-weight: bold;
+
+}
 //footer
 footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	//background: $bg-celeste;
-	color: $black;
+	background: black;
+	color: $bg-celeste;
+
+}
+
+.mensaje{
+	margin-top: 20px;
+	p{
+		font-size: 20px;
+	}
+	p:first-child{
+		font-size: 24px;
+	}
 }
