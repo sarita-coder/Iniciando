@@ -1,6 +1,5 @@
 include mixins/mixins.jade
 <!DOCTYPE html>
-<<<<<<< HEAD
 	html(lang="en")
 		head
 			meta(charset="UTF-8")
@@ -69,41 +68,11 @@ include mixins/mixins.jade
 						a(href="https://www.facebook.com/edised.roman" target="_blank").fa.fa-facebook
 					li 
 						a(href="https://github.com/sarita-coder" target="_blank").fa.fa-github
-=======
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	title Sarita Coder
-	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
-	link(rel="icon" type="image/png" href="img/SARITA-02.png" )
-	meta(name="viewport" content="width=device-width, initial-scale=1")
-	link(rel="stylesheet", href="css/animate.css")
-	link(rel="stylesheet", href="css/main.css")
-	
-body(data-spy="scroll" data-target=".navbar" data-offset="50")
-	// Fixed navbar
-	#menu.navbar.navbar-fixed-top.nav-transp(role='navigation')
-		.container.padd
-			.navbar-header
-				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-					span.icon-bar
-					span.icon-bar
-					span.icon-bar
-				a.navbar-brand(href='#hero')
-					span.logo 
-			#collapse.navbar-collapse
-				ul.nav.navbar-nav.navbar-right
-					li.active.hidden
-						a(href="")
-					li
-						a.link1.link-header(href='#Sobremi') Sobre mí
->>>>>>> gh-pages
 					li
 						a(href="https://www.linkedin.com/in/saritacoder" target="_blank").fa.fa-linkedin
 					li
 						a(href="https://plus.google.com/u/0/103995783096870228612/about" target="_blank").fa.fa-google-plus
 					li
-<<<<<<< HEAD
 						a(href="mailto:sarita.roman.colonio@gmail.com").fa.fa-envelope-o
 					//li
 						a(href="" target="_blank") Contactame
@@ -218,147 +187,3 @@ body(data-spy="scroll" data-target=".navbar" data-offset="50")
 		script(src='js/scroll.js')
 		script(src='js/main.js')
 			
-=======
-						a.link4.link-header(href='#contacto') Contacto
-	//fin header	
-	.Hero#hero
-		.opacity
-			.banner
-				.titulo
-					p.text-you.animated.fadeInLeft Lo que tú ves
-					p.text-i.animated.fadeInRight Lo que yo hago
-				.marco-pantalla
-					.cont-pantalla
-						.imagen1
-							.imagen2
-								textarea(readonly)
-				.teclado
-					.touch
-					.focos
-				
-	.contactame
-		ul
-			li
-				a(href="https://www.facebook.com/edised.roman" target="_blank").fa.fa-facebook
-			li 
-				a(href="https://github.com/sarita-coder" target="_blank").fa.fa-github
-			li
-				a(href="https://www.linkedin.com/in/saritacoder" target="_blank").fa.fa-linkedin
-			li
-				a(href="https://plus.google.com/u/0/103995783096870228612/about" target="_blank").fa.fa-google-plus
-			li
-				a(href="mailto:sarita.roman.colonio@gmail.com").fa.fa-envelope-o
-			//li
-				a(href="" target="_blank") Contactame
-
-	.main#Sobremi
-		.container.text-center
-			.row
-				+title("Sobre mí")
-			.row.description
-				.col-sm-5.col-sm-offset-1.text-center
-					p.hola.text-left ¡Hola!
-					p Mi nombre es Sarita, soy desarrolladora front-end mi pasión por el mundo digital se ha inclinado por la programación y desde que ingrese a la Laboratoria descubrí que toda idea o sueño se puede materializar. Me encanta lo que hago y disfruto mucho trabajando en equipo.
-					.cualidades
-						.row.text-center
-							+cualidad("fa-thumbs-o-up","Fuerza")
-							+cualidad("fa-lightbulb-o","Inteligente")
-							+cualidad("fa-users","Equipo")
-							+cualidad("fa-laptop","Compañero")
-
-				.col-sm-5.text-center
-					.foto
-
-	.w-100#lemas
-		.container.lema.text-center
-			.w-100#maquina
-																		
-	.main.our_woks_area.section-padding#portafolio
-		.container
-			.row.text-center
-				+title("Portafolio")
-			.row
-				.col-sm-12
-					.about_p.text-center
-						p Aquí algunos de los trabajos realizados por tipo de tecnología. 
-			.row.pb-50
-				.col-md-12.text-center
-					.portfolio-filter
-						ul
-							li.filter.active(data-filter="all") All
-							li.filter(data-filter=".css") CSS
-							li.filter(data-filter=".sass") SASS
-							li.filter(data-filter=".jade") JADE
-							li.filter(data-filter=".js") JS
-							li.filter(data-filter=".grupal") Grupal
-					.portfolio_item
-						+portafolio("http://sarita-coder.github.io/Dashy","https://github.com/sarita-coder/Dashy","css","dashboard","DashBoard",1)
-						+portafolio("http://sarita-coder.github.io/whassapt","https://github.com/sarita-coder/whassapt","css js","whatsap","Whaptsap",3)
-						+portafolio("http://dev.laboratoria.la/primes.sary/","https://github.com/saracoders/primes","sass grupal js","primes","Primes",1)
-						+portafolio("http://sarita-coder.github.io/Kane","https://github.com/sarita-coder/Kane","css","kene","Kane",1)
-						+portafolio("http://sazabache.github.io/Flat-theme","https://github.com/sazabache/Flat-theme","jade sass grupal","flat","Flat Theme",3)
-						+portafolio("http://sarita-coder.github.io/Love-Blog","https://github.com/sarita-coder/Love-Blog","jade sass","portfolio_1","Love Blog",2)
-						+portafolio("http://sarita-coder.github.io/blog-responsibe","https://github.com/sarita-coder/blog-responsibe","jade sass grupal","Blog-Responsive","Flatness",1)
-						+portafolio("http://sarita-coder.github.io/future-imperfect","https://github.com/sarita-coder/future-imperfect","sass jade","future-imperfect","Future Imperfect",3)
-						+portafolio("http://emilyvivancocuba.github.io/Examen-grupal-La-Republica","https://github.com/emilyvivancocuba/Examen-grupal-La-Republica","jade grupal sass","republica","República",3)
-						+portafolio("http://sarita-coder.github.io/triangle-free","https://github.com/sarita-coder/triangle-free","sass","triangle","Triangle",1)
-						+portafolio("http://sarita-coder.github.io/reloj-digital","https://github.com/sarita-coder/reloj-digital","js","reloj_digital","Reloj Digital",4)
-						+portafolio("http://sarita-coder.github.io/smash-faces","https://github.com/sarita-coder/smash-faces","css js","smach-face","Smach Face",4)
-
-
-	.w-100#lema
-		.container.lema.text-center
-			h2 Front-end, apasionada por el código y amante de la naturaleza.
-
-		
-	.main#habilidades
-		.container.text-center
-			.row
-				+title("Habilidades")
-			.row
-				.col-sm-4.col-xs-12.col-sm-offset-2
-					.especialidad
-						a(href="")
-							span.fa.fa-code
-						p Desarrolladora Web
-						p Maquetación de páginas web responsive con diferentes tecnologías: Html, Css, Sass, Jade, Js, Jquery, Worpress. Con nociones en Modelo Vista Controlador con Java, Base de datos con Sql, Postgres y MySql.
-
-				.col-sm-4.col-xs-12
-					.especialidad
-						a(href="")
-							span.fa.fa-globe
-						p Geomática
-						p Desarrollo de aplicaciones para la creación y administración de informácion espacial para mejorar la experiencia de navegabilidad del ususario para acceder a información y compartirla de manera efectiva.
-
-	.main#contacto
-		.container.text-center.contacto.pd_100
-			.row
-				+title("Contactame")
-			.row
-				.col-sm-4.col-sm-offset-1
-					.foto1
-				.col-sm-4.col-sm-offset-1
-					.mensaje
-						p ¡Hola¡ 
-						p Gracias por visitar mi portafolio si te gusto y tienes un proyecto, contáctame lo heremos realidad, encantada de ser parte del equipo.
-						p 
-							a.mail(href="mailto:sarita.roman.colonio@gmail.com") sarita.roman.colonio@gmail.com
-						p
-							a.mail(href="") 991645498
-
-	footer
-		.container.text-center
-			.row
-				p Copyright &#169; 2016 | Sarita Déside Román Colonio 
-
-
-script(src='js/jquery.js')
-script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-script(src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js")
-//script(src='js/jquery.mixitup.js')	
-script(type='text/javascript', src='js/bootstrap.min.js')
-script(src='js/scroll.js')
-script(src='js/main.js')
-	
->>>>>>> gh-pages
