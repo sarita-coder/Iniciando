@@ -1,3 +1,33 @@
+
+.nav-1{
+    top: 0;
+    height: 60px;
+    position: fixed;
+    float: left;
+    margin-top: 17% ;
+    margin-left: 25%;
+	z-index:4;
+	-webkit-transition: margin-left .5s, margin-top .5s;
+}
+
+.name{
+	color:white;
+	font-family: $titulo-font;
+	font-size: 10rem;
+	-webkit-transition: font-size .5s;
+}
+
+
+#logo{
+	//z-index:10;
+    height: 200px;
+    -webkit-transition: height .5s;
+}
+
+#menu{
+	z-index:1;
+}
+
 .navbar-fixed-top{
 	background:$bg-color;
 }
@@ -31,6 +61,8 @@
 	color: $bg-celeste;
 }
 .nav {
+	display:table;
+
 	li{
 		.link-header{
 		color: white;
@@ -49,8 +81,8 @@
 	 	}
 }
 .logo-inver{
-	background-image: url(../img/SARITA-02.png);
-	background-color: #fff;
+	//background-image: url(../img/SARITA-02.png);
+	//background-color: #fff;
 }
 .navbar-nav{
 	transform: translateX(0%);
@@ -172,9 +204,29 @@
 		} 
 	}
 }
+.banner{
+	background-image:url('../img/dato.jpg');
+	height:100vh;
+	background-size:120%;
+	animation: movimiento 10s infinite linear alternate;
+
+
+}
+
+@keyframes movimiento{
+
+	from {
+		background-position: bottom left;
+	}
+	to{
+		background-position: top right;
+	}
+}
+
+
 
 .banner{
-	width:50%;
+	width:100%;
 	.marco-pantalla{
 		border: 20px solid $bg-border;
 		border-radius:15px;
