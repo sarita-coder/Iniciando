@@ -53,7 +53,7 @@ $(document).ready(function(){
     var scroll;
     var widthW;
     var tablet = 992;
-    var movil = 768;
+    var movil = 700;
 
     $(window).scroll(function(){
         scroll = $(window).scrollTop();
@@ -62,7 +62,7 @@ $(document).ready(function(){
             if(!flag){
                 $(".nav-1").css({"margin-top": "0%","margin-left": "5%"});
                 $("#logo").css({"height":"50px"});
-                $(".name").css({"font-size":"2rem"});
+                $(".name").css({"font-size":"2em"});
 
                 //$("nav-1").css({"background-color": "#3C3C3C"});
                 flag = true;
