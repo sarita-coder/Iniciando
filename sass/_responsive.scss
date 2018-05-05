@@ -1,5 +1,75 @@
-@media screen and (max-width: 700px) {
-	.titulo{
+@media screen and (min-width: 992px )  {
+	.banner{
+	background-size:120%;
+	}
+		.nav-1{
+		    margin-top: 17% ;
+
+		}
+
+		.name{
+			font-size: 10rem;
+		}
+
+
+		#logo{
+			//z-index:10;
+		    height: 200px;
+		}
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px )  and (max-width: 992px ) {
+		.banner{
+			background-size:150%;
+		}
+		.nav-1{
+		    margin-top: 20% ;
+
+		}
+
+		.name{
+			font-size: 6rem;
+		}
+
+
+		#logo{
+			//z-index:10;
+		    height: 150px;
+		}
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+		.banner{
+			background-size:250%;
+		}
+
+.nav-1{
+    margin-top: 50% ;
+
+}
+
+.name{
+	font-size: 3rem;
+}
+
+
+#logo{
+	//z-index:10;
+    height: 80px;
+}
+
+
+
+.titulo{
 		p {
     		animation-delay: 0.2s;
     		font-family: "Abril Fatface";
