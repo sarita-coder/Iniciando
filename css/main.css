@@ -5909,6 +5909,10 @@ a:hover {
   font-size: 3rem; }
 
 @media screen and (min-width: 992px) {
+  .foto {
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px; }
   .banner {
     background-size: 120%; }
   .nav-1 {
@@ -5919,6 +5923,10 @@ a:hover {
     height: 200px; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .foto {
+    margin-top: 2rem;
+    width: 200px;
+    height: 200px; }
   .banner {
     background-size: 150%; }
   .nav-1 {
@@ -5929,6 +5937,10 @@ a:hover {
     height: 150px; } }
 
 @media screen and (max-width: 768px) {
+  .foto {
+    margin-top: 2rem;
+    width: 200px;
+    height: 200px; }
   .banner {
     background-size: 250%; }
   .nav-1 {
@@ -6287,8 +6299,6 @@ a:hover {
       font-size: 15px;
       font-weight: bold; }
   .description .foto {
-    width: 300px;
-    height: 300px;
     border-radius: 50%;
     display: inline-block;
     background-image: url("../img/sobre_mi2.jpg");
