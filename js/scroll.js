@@ -51,23 +51,63 @@ $(document).ready(function(){
 
     var flag = false;
     var scroll;
+    var widthW;
+    var tablet = 992;
+    var movil = 768;
 
     $(window).scroll(function(){
         scroll = $(window).scrollTop();
-
-        if(scroll > 200){
+        widthW =  $(window).width();
+        if(scroll > 200 && widthW > tablet){
             if(!flag){
                 $(".nav-1").css({"margin-top": "0%","margin-left": "5%"});
                 $("#logo").css({"height":"50px"});
-                $(".name").css({"font-size":"2em"});
+                $(".name").css({"font-size":"2rem"});
+
                 //$("nav-1").css({"background-color": "#3C3C3C"});
                 flag = true;
             }
-        }else{
+        } else if(scroll > 120 && widthW < tablet && widthW >= movil){
+            if(!flag){
+                $(".nav-1").css({"margin-top": "0%","margin-left": "5%"});
+                $("#logo").css({"height":"50px"});
+                $(".name").css({"font-size":"2rem"});
+
+                //$("nav-1").css({"background-color": "#3C3C3C"});
+                flag = true;
+            }
+        }else if(scroll > 80 &&  widthW < movil){
+            if(!flag){
+                $(".nav-1").css({"margin-top": "0%","margin-left": "5%"});
+                $("#logo").css({"height":"50px"});
+                $(".name").css({"font-size":"2rem"});
+
+                //$("nav-1").css({"background-color": "#3C3C3C"});
+                flag = true;
+
+            }
+        }else  if(scroll < 200 && widthW > tablet){
             if(flag){
                 $(".nav-1").css({"margin-top": "17%","margin-left": "25%"});
                 $("#logo").css({"height":"200px"});
-                $(".name").css({"font-size":"10em"});
+                $(".name").css({"font-size":"10rem"});
+                //$("nav-1").css({"background-color": "transparent"});
+                flag = false;
+            }
+        }
+        else  if(scroll < 120 && widthW < tablet && widthW >= movil){
+            if(flag){
+                $(".nav-1").css({"margin-top": "20%","margin-left": "25%"});
+                $("#logo").css({"height":"150px"});
+                $(".name").css({"font-size":"6rem"});
+                //$("nav-1").css({"background-color": "transparent"});
+                flag = false;
+            }
+        }else  if(scroll < 80 && widthW < movil){
+            if(flag){
+                $(".nav-1").css({"margin-top": "50%","margin-left": "25%"});
+                $("#logo").css({"height":"80px"});
+                $(".name").css({"font-size":"3rem"});
                 //$("nav-1").css({"background-color": "transparent"});
                 flag = false;
             }
@@ -77,3 +117,28 @@ $(document).ready(function(){
     });
 
 });
+
+ /*   function sizeWindow(){
+        var widthW =  $(window).width();
+        var tablet = 992;
+        var movil = 768;
+        if(widthW < tablet && widthW > movil){
+        $('#dispositivo').removeClass();
+        $('#dispositivo').addClass('tablet');
+        
+        }else if(widthW > tablet){
+        $('#dispositivo').removeClass();
+        $('#dispositivo').addClass('desktop');
+        }else if(widthW < movil){
+        $('#dispositivo').removeClass();
+        $('#dispositivo').addClass('movil');
+        }
+    }
+
+    $(document).ready(function() {
+        sizeWindow()
+    }); 
+
+    $(window).resize(function() {
+        sizeWindow()
+    }); */

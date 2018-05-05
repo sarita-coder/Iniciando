@@ -5908,12 +5908,91 @@ a:hover {
   font-family: "Lily Script One", cursive;
   font-size: 3rem; }
 
+@media screen and (min-width: 992px) {
+  .banner {
+    background-size: 120%; }
+  .nav-1 {
+    margin-top: 17%; }
+  .name {
+    font-size: 10rem; }
+  #logo {
+    height: 200px; } }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner {
+    background-size: 150%; }
+  .nav-1 {
+    margin-top: 20%; }
+  .name {
+    font-size: 6rem; }
+  #logo {
+    height: 150px; } }
+
+@media screen and (max-width: 768px) {
+  .banner {
+    background-size: 250%; }
+  .nav-1 {
+    margin-top: 50%; }
+  .name {
+    font-size: 3rem; }
+  #logo {
+    height: 80px; }
+  .titulo p {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    font-family: "Abril Fatface";
+    color: #F2385A;
+    font-size: 2rem; }
+  .banner {
+    width: 60%; }
+    .banner .marco-pantalla {
+      border: 20px solid black;
+      border-radius: 15px;
+      width: 100%; }
+      .banner .marco-pantalla .cont-pantalla {
+        height: 100px; }
+        .banner .marco-pantalla .cont-pantalla .imagen1 {
+          width: 100%;
+          height: 100px;
+          background-image: url("../img/hero5.jpg");
+          background-size: cover;
+          position: relative; }
+          .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2 {
+            background-image: url("../img/portfolio_1.png");
+            position: absolute;
+            background-size: cover;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 110px;
+            resize: horizontal;
+            overflow: hidden; }
+          .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2:before {
+            content: "\2194";
+            color: white;
+            font-size: 25px;
+            background: rgba(0, 0, 0, 0.7);
+            height: 100%;
+            position: absolute;
+            line-height: 100px;
+            right: 0;
+            top: 0; }
+          .banner .marco-pantalla .cont-pantalla .imagen1 textarea {
+            opacity: 0;
+            width: 20px;
+            height: 10px;
+            position: relative;
+            top: 50%;
+            -webkit-transform: scaleY(40);
+            -ms-transform: scaleY(40);
+            transform: scaleY(40);
+            cursor: e-resize; } }
+
 .nav-1 {
   top: 0;
   height: 60px;
   position: fixed;
   float: left;
-  margin-top: 17%;
   margin-left: 25%;
   z-index: 4;
   -webkit-transition: margin-left .5s, margin-top .5s; }
@@ -5921,11 +6000,9 @@ a:hover {
 .name {
   color: white;
   font-family: "Lily Script One", cursive;
-  font-size: 10rem;
   -webkit-transition: font-size .5s; }
 
 #logo {
-  height: 200px;
   -webkit-transition: height .5s; }
 
 #menu {
@@ -6100,8 +6177,8 @@ a:hover {
 
 .banner {
   background-image: url("../img/dato.jpg");
+  background-repeat: no-repeat;
   height: 100vh;
-  background-size: 120%;
   -webkit-animation: movimiento 10s infinite linear alternate;
   animation: movimiento 10s infinite linear alternate; }
 
@@ -6443,55 +6520,3 @@ footer {
     font-size: 20px; }
   .mensaje p:first-child {
     font-size: 24px; }
-
-@media screen and (max-width: 700px) {
-  .titulo p {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-    font-family: "Abril Fatface";
-    color: #F2385A;
-    font-size: 2rem; }
-  .banner {
-    width: 60%; }
-    .banner .marco-pantalla {
-      border: 20px solid black;
-      border-radius: 15px;
-      width: 100%; }
-      .banner .marco-pantalla .cont-pantalla {
-        height: 100px; }
-        .banner .marco-pantalla .cont-pantalla .imagen1 {
-          width: 100%;
-          height: 100px;
-          background-image: url("../img/hero5.jpg");
-          background-size: cover;
-          position: relative; }
-          .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2 {
-            background-image: url("../img/portfolio_1.png");
-            position: absolute;
-            background-size: cover;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 110px;
-            resize: horizontal;
-            overflow: hidden; }
-          .banner .marco-pantalla .cont-pantalla .imagen1 .imagen2:before {
-            content: "\2194";
-            color: white;
-            font-size: 25px;
-            background: rgba(0, 0, 0, 0.7);
-            height: 100%;
-            position: absolute;
-            line-height: 100px;
-            right: 0;
-            top: 0; }
-          .banner .marco-pantalla .cont-pantalla .imagen1 textarea {
-            opacity: 0;
-            width: 20px;
-            height: 10px;
-            position: relative;
-            top: 50%;
-            -webkit-transform: scaleY(40);
-            -ms-transform: scaleY(40);
-            transform: scaleY(40);
-            cursor: e-resize; } }

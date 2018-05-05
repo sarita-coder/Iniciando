@@ -4,7 +4,7 @@
     height: 60px;
     position: fixed;
     float: left;
-    margin-top: 17% ;
+ //   margin-top: 17% ;
     margin-left: 25%;
 	z-index:4;
 	-webkit-transition: margin-left .5s, margin-top .5s;
@@ -13,14 +13,14 @@
 .name{
 	color:white;
 	font-family: $titulo-font;
-	font-size: 10rem;
+//	font-size: 10rem;
 	-webkit-transition: font-size .5s;
 }
 
 
 #logo{
 	//z-index:10;
-    height: 200px;
+  //  height: 200px;
     -webkit-transition: height .5s;
 }
 
@@ -206,8 +206,9 @@
 }
 .banner{
 	background-image:url('../img/dato.jpg');
+	background-repeat:no-repeat;
 	height:100vh;
-	background-size:120%;
+//	background-size:120%;
 	animation: movimiento 10s infinite linear alternate;
 
 
